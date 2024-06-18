@@ -12,7 +12,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      height: 65vh;
+      height: 100vh;
       margin: 0;
       background-color: #080834;
     }
@@ -25,29 +25,31 @@
     .buttons {
       display: flex;
       flex-direction: column;
-      gap: 15px;
+      gap: 20px;
     }
     button {
-      padding: 10px 20px;
+      padding: 37px 140px;
       font-size: 16px;
       border: none;
       border-radius: 4px;
       cursor: pointer;
-      background-color: #007bff;
+      background-color: #3a3a7e;
       color: white;
       transition: background-color 0.3s;
+      box-shadow: 5px 7px 4px black;
+
     }
     button:hover {
-      background-color: #0056b3;
+      background-color: #2b2b5e;
     }
   </style>
 </head>
 <body>
   <h1>BUZZ</h1>
   <div class="buttons">
-    <button onclick="button1Action()">Button 1</button>
-    <button onclick="button2Action()">Button 2</button>
-    <button onclick="button3Action()">Button 3</button>
+    <button onclick="button1Action()">Join</button>
+    <button onclick="button2Action()">Create</button>
+    <button onclick="button3Action()">Rules</button>
   </div>
 
   <script>
