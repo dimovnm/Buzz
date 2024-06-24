@@ -290,6 +290,38 @@
     button:hover {
       background-color: #2b2b5e;
     }
+    .popup {
+      display: none; /* Hidden by default */
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      padding: 20px;
+      box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+      border-radius: 10px;
+      z-index: 1000; /* Ensure it is above other elements */
+    }
+    .popup h2 {
+      margin-top: 0;
+    }
+    .popup p {
+      margin-bottom: 20px;
+    }
+    .popup button {
+      padding: 10px 20px;
+      font-size: 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: #3a3a7e;
+      color: white;
+      transition: background-color 0.3s;
+      box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+    }
+    .popup button:hover {
+      background-color: #2b2b5e;
+    }
     .feedback-button {
       position: absolute;
       bottom: 5px;
@@ -336,6 +368,12 @@
   </div>
 <button class="feedback-button" onclick="feedbackButtonAction()"><img src="https://icons.veryicon.com/png/o/miscellaneous/project-icon-1/discussion-3.png" alt="Feedback"></button>
 
+  <div id="popup" class="popup">
+    <h2>Rules</h2>
+    <p>Here you can explain the rules of your application...</p>
+    <button onclick="closePopup()">← Back</button>
+  </div>
+
   <script>
     function button1Action() {
       alert('Button 1 clicked!');
@@ -346,7 +384,12 @@
     }
 
     function button3Action() {
-      alert('Button 3 clicked!');
+      document.getElementById('popup').style.display = 'block';
+    }
+
+    function closePopup() {
+      // Hide the popup
+      document.getElementById('popup').style.display = 'none';
     }
     
     function feedbackButtonAction() {
