@@ -1,5 +1,6 @@
 // import { useNavigate } from "react-router-dom";
 import Lights from "../components/Lights";
+import FeedbackButton from "../components/FeedbackButton";
 import "./css/LandingPage.css";
 
 export default function LandingPage(){
@@ -17,6 +18,7 @@ export default function LandingPage(){
                 <button className="landing-btn">Rules?</button>
             </div>
           </main>
+          <FeedbackButton/>
         </div>
     );
 }

@@ -30,13 +30,12 @@ body {
   margin: 0;
   background-color: #080834;
   color: white;
-  min-width: 320px;
   min-height: 100vh;
 }
 
 html, body {
   height: 100%;
-  overflow: hidden;
+  overflow: hidden; /*fix !!*/
 }
 
 h1 {

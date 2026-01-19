@@ -12,6 +12,7 @@
   align-items: center;
   justify-content: flex-start;
   padding-top: clamp(100px, 15vh, 220px);
+  padding-bottom: 0px;
   gap: 36px;
   text-align: center;
 }
