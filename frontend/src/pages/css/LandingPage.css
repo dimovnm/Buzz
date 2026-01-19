@@ -11,9 +11,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding-top: clamp(100px, 15vh, 220px);
-  padding-bottom: 0px;
-  gap: 36px;
+  padding-top: clamp(40px, 15vh, 140px);
+  padding-bottom: 40px;
+  gap: 28px;
   text-align: center;
 }
 
