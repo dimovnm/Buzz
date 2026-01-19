@@ -1,3 +1,9 @@
+/* 
+ * Based on the Christmas lights with HTML, CSS, and JavaScript by Chinedu Daniel:
+ * https://www.chinedudaniel.com/posts/2019/12/16/lets-build-christmas-lights-with-html-css-javascript
+ * Adapted for responsive React/Vite app
+ */
+
 :root {
   --theme-color-one: #025ba0;
   --theme-color-two: #9bc72b;
@@ -69,11 +75,11 @@
   100% { box-shadow: none; }
 }
 
-/* ===== responsive wrapper ===== */
+
 .lights-wrap {
   width: 100%;
   padding: 40px 0 10px;
-  pointer-events: none;         /* decorative */
+  pointer-events: none;
   z-index: 50;
   display: flex;
   justify-content: center;
@@ -85,11 +91,6 @@
   left: 0;
 }
 
-/* strand config:
-   - width spans the viewport
-   - wire gap recalculates as screens change
-   - bulb size stays fixed
-*/
 .light-bulbs {
   --bulb-size: 28px;
   --edge-inset: clamp(14px, 4vw, 48px);
@@ -109,7 +110,6 @@
   position: relative;
 }
 
-/* bulb sizing scales with viewport */
 .light-bulb {
   border-radius: 50%;
   width: var(--bulb-size, 28px);
@@ -117,10 +117,9 @@
   position: relative;
   animation-duration: 2.5s;
   animation-iteration-count: infinite;
-  flex: 0 0 var(--bulb-size, 28px); /* keep bulbs fixed */
+  flex: 0 0 var(--bulb-size, 28px);
 }
 
-/* cap */
 .light-bulb::before {
   content: "";
   position: absolute;
@@ -134,9 +133,6 @@
   top: calc(-0.4 * var(--bulb-size, 28px));
 }
 
-/* cord segment to next bulb:
-   make it scale with viewport (no hard 90px).
-*/
 .light-bulb::after {
   content: "";
   position: absolute;
@@ -153,7 +149,6 @@
   border: none;
 }
 
-/* color classes */
 .light-bulb.theme-color-one { background: var(--theme-color-one); animation-name: light-up-theme-color-one; }
 .light-bulb.theme-color-two { background: var(--theme-color-two); animation-name: light-up-theme-color-two; }
 .light-bulb.theme-color-three { background: var(--theme-color-three); animation-name: light-up-theme-color-three; }
@@ -163,7 +158,6 @@
 .light-bulb.theme-color-seven { background: var(--theme-color-seven); animation-name: light-up-theme-color-seven; }
 .light-bulb.theme-color-eight { background: var(--theme-color-eight); animation-name: light-up-theme-color-eight; }
 
-/* optional: make it feel less crowded on very tiny screens */
 @media (max-width: 420px) {
   .lights-wrap { padding: 10px 0 4px; }
 }
