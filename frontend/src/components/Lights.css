@@ -12,7 +12,6 @@
   --grey: #999;
 }
 
-/* ===== glow animations (your versions) ===== */
 @keyframes light-up-theme-color-one {
   0% { box-shadow: 0 1px 10px 5px var(--theme-color-one); }
   25% { box-shadow: 0 1px 15px 5px var(--theme-color-one); }
@@ -73,9 +72,11 @@
 /* ===== responsive wrapper ===== */
 .lights-wrap {
   width: 100%;
-  padding: 14px 18px 6px;
+  padding: 40px 0 10px;
   pointer-events: none;         /* decorative */
   z-index: 50;
+  display: flex;
+  justify-content: center;
 }
 
 .lights-wrap.is-fixed {
@@ -84,30 +85,39 @@
   left: 0;
 }
 
-/* THIS is the key to “bulbs get closer”:
-   - width: 100% (not 800px)
-   - gap scales down on small screens
-   - bulbs can shrink a bit via clamp
+/* strand config:
+   - width spans the viewport
+   - wire gap recalculates as screens change
+   - bulb size stays fixed
 */
 .light-bulbs {
+  --bulb-size: 28px;
+  --edge-inset: clamp(14px, 4vw, 48px);
+  --wire-extra: clamp(6px, 1vw, 14px);
+  --bulb-count: var(--strand-count, 12);
+  --segments: max(1, calc(var(--bulb-count) - 1));
+  --available-width: max(0px, calc(100% - (2 * var(--edge-inset))));
+  --wire-gap-base: max(0px, calc((var(--available-width) - (var(--bulb-count) * var(--bulb-size))) / var(--segments)));
+  --wire-gap: calc(var(--wire-gap-base) + var(--wire-extra));
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  width: min(1200px, 100%);
-  margin: 0 auto;
-  padding: 8px 6px 0;
-  gap: clamp(6px, 1.2vw, 18px);
+  width: 100%;
+  margin: 0;
+  padding: 12px var(--edge-inset) 0;
+  box-sizing: border-box;
+  position: relative;
 }
 
 /* bulb sizing scales with viewport */
 .light-bulb {
   border-radius: 50%;
-  width: clamp(14px, 2.0vw, 28px);
-  height: clamp(14px, 2.0vw, 28px);
+  width: var(--bulb-size, 28px);
+  height: var(--bulb-size, 28px);
   position: relative;
-  animation-duration: 1.1s;
+  animation-duration: 2.5s;
   animation-iteration-count: infinite;
-  flex: 0 0 auto; /* don’t stretch bulbs */
+  flex: 0 0 var(--bulb-size, 28px); /* keep bulbs fixed */
 }
 
 /* cap */
@@ -115,13 +125,13 @@
   content: "";
   position: absolute;
   border: 2px solid #222;
-  width: clamp(6px, 0.9vw, 10px);
-  height: clamp(6px, 0.9vw, 10px);
+  width: calc(var(--bulb-size, 28px) * 0.35);
+  height: calc(var(--bulb-size, 28px) * 0.35);
   background: #222;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   left: 25%;
-  top: calc(-1 * clamp(10px, 1.2vw, 12px));
+  top: calc(-0.4 * var(--bulb-size, 28px));
 }
 
 /* cord segment to next bulb:
@@ -130,9 +140,9 @@
 .light-bulb::after {
   content: "";
   position: absolute;
-  top: calc(-1 * clamp(18px, 2.2vw, 22px));
-  left: 60%;
-  width: clamp(28px, 6vw, 90px);
+  top: -22px;
+  left: 50%;
+  width: clamp(28px, 8.5vw, 250px); /*test on monitor - max 250px*/
   height: clamp(16px, 2.2vw, 28px);
   border-bottom: 4px solid #222;
   border-radius: 50%;
@@ -155,6 +165,6 @@
 
 /* optional: make it feel less crowded on very tiny screens */
 @media (max-width: 420px) {
-  .lights-wrap { padding-left: 10px; padding-right: 10px; }
-  .light-bulbs { gap: 6px; }
+  .lights-wrap { padding: 10px 0 4px; }
 }
+

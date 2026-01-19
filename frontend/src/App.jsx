@@ -1,12 +1,12 @@
-import Lights from "./components/Lights";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import LandingPage from "./pages/LandingPage";
 
 export default function App() {
   return (
-    <>
-      <Lights count={30} fixed={true} height={90} />
-      <main style={{ padding: 24 }}>
-        <h1>Your App</h1>
-      </main>
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+      </Routes>
+    </Router>
   );
 }

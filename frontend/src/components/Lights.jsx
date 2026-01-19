@@ -12,9 +12,9 @@ const COLORS = [
 ];
 
 export default function Lights({
-  count = 28,          // number of bulbs across
-  fixed = true,        // stick to top of screen
-  height = 90,         // reserved vertical space (px) if fixed
+  count = 12,          // num of bulbs
+  fixed = true,
+  height = 90,
 }) {
   const bulbs = Array.from({ length: count }, (_, i) => COLORS[i % COLORS.length]);
 
@@ -22,14 +22,16 @@ export default function Lights({
     <>
       {fixed && <div style={{ height }} aria-hidden="true" />}
       <div className={`lights-wrap ${fixed ? "is-fixed" : ""}`} aria-hidden="true">
-        <div className="light-bulbs">
+        <div
+          className="light-bulbs"
+          style={{ "--strand-count": count }}
+        >
           {bulbs.map((cls, i) => (
             <span
               key={i}
               className={`light-bulb ${cls}`}
               style={{
-                // staggers the animation so they don't pulse all at once
-                animationDelay: `${(i % 8) * 0.12}s`,
+                animationDelay: `${(i % 8) * 0.5}s`,
               }}
             />
           ))}
