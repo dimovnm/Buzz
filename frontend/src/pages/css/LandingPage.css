@@ -52,3 +52,66 @@
 .landing-btn:active {
   transform: translateY(2px);
 }
+
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 3000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup {
+  background-color: #3a3a7e;
+  padding: 40px;
+  width: 80%;
+  max-width: 600px;
+  height: 70%;
+  max-height: 560px;
+
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  border: solid;
+  border-color: #343471;
+  border-radius: 15px;
+
+  position: relative;
+  z-index: 3100;
+
+  color: #111;
+}
+
+.popup h2 {
+  margin-top: 0;
+  text-align: center;
+  font-family: "Luckiest Guy", system-ui, sans-serif;
+}
+
+.popup p {
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.popup-close {
+  width: 40px;
+  height: 40px;
+
+  border: none;
+  padding: 0;
+  box-shadow: none;
+  cursor: pointer;
+
+  position: absolute;
+  top: 30px;
+  left: 20px;
+
+  /*background: rgba(58, 58, 126, 0.2);
+  border-radius: 10px;*/
+  background: url("../../assets/arrow-left.png") no-repeat center center;
+  background-size: contain;
+}
+
+.popup-close:hover {
+  filter: brightness(0.85);
+}
