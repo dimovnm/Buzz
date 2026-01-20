@@ -1,4 +1,4 @@
-import "./Lights.css";
+import "./css/Lights.css";
 
 const COLORS = [
   "theme-color-one",

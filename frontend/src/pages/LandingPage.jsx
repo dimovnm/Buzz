@@ -1,12 +1,16 @@
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import Lights from "../components/Lights";
 import FeedbackButton from "../components/FeedbackButton";
 import "./css/LandingPage.css";
 
 export default function LandingPage(){
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
     const [rulesOpen, setRulesOpen] = useState(false);
+    
+    const handleCreate = () => {
+        navigate("/CreatePage");
+    };
 
     return (
         <div className="landing-page">
@@ -16,7 +20,7 @@ export default function LandingPage(){
 
             <div className="landing-buttons">
                 <button className="landing-btn">Join!</button>
-                <button className="landing-btn">Create.</button>
+                <button className="landing-btn" onClick={handleCreate}>Create.</button>
                 <button className="landing-btn" onClick={() => setRulesOpen(true)}>Rules?</button>
             </div>
           </main>

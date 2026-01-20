@@ -1,4 +1,4 @@
-import "./feedback.css";
+import "./css/feedback.css";
 import feedbackIcon from "../assets/ratings.png";
 
 export default function FeedbackButton() {
