@@ -41,21 +41,21 @@ export default function CreatePage() {
   return (
     <div className="min-h-screen bg-buzzbg text-white">
       <div className="flex min-h-screen">
-        <div className="w-[1110px] relative">
-          <div className="absolute left-[80px] top-[51px] font-luckiest text-[75px] text-buzzpanel leading-none">
-            
+        <div className="flex-1 px-[clamp(16px,4vw,80px)] pt-[clamp(16px,3vw,40px)]">
+          <div className="font-luckiest text-buzzpanel text-[clamp(44px,5vw,75px)] leading-none">
             CODE: {lobbyId}
           </div>
-          <div className="absolute left-[80px] top-[140px]">
-            <div className="grid grid-cols-3 gap-x-[50px] gap-y-[86px]">
+
+          <div className="mt-[clamp(16px,3vw,40px)]">
+            <div className="grid grid-cols-3 gap-x-[clamp(18px,3vw,50px)] gap-y-[clamp(22px,3.5vw,46px)]">
               {CATEGORIES.map((c) => (
                 <button
                   key={c.key}
                   className="text-center"
                   onClick={() => console.log("clicked", c.key)}
                 >
-                  <div className="w-[290px] h-[200px] rounded-[15px] bg-buzzpanel shadow-buzz flex items-center justify-center">
-                    <div className="w-[250px] h-[140px] rounded-[12px] border-[4px] border-buzzborder overflow-hidden flex items-center justify-center bg-buzzpanel">
+                  <div className="w-[clamp(200px,18vw,290px)] h-[clamp(140px,12vw,200px)] rounded-[15px] bg-buzzpanel shadow-buzz flex items-center justify-center">
+                  <div className="w-[calc(100%-40px)] h-[clamp(90px,8vw,140px)] rounded-[12px] border-[4px] border-buzzborder overflow-hidden flex items-center justify-center bg-buzzpanel">
                       {c.img ? (
                         <img
                           src={c.img}
@@ -63,14 +63,14 @@ export default function CreatePage() {
                           className="w-full h-full object-cover"
                         />
                       ) : (
-                        <span className="font-luckiest text-[64px] text-black leading-none">
+                        <span className="font-luckiest text-[clamp(40px,4vw,64px)] text-black leading-none">
                           +
                         </span>
                       )}
                     </div>
                   </div>
 
-                  <div className="mt-3 font-luckiest text-[50px] text-buzzpanel leading-none">
+                  <div className="mt-3 font-luckiest text-[clamp(26px,3.2vw,50px)] text-buzzpanel leading-none">
                     {c.label}
                   </div>
                 </button>
