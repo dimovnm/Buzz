@@ -50,10 +50,10 @@ export default function LandingPage(){
                         </p>
                         <p>
                             <strong>Gameplay</strong><br />
-                            1.  You will be randomly assigned a character out of the available 25.<br />
-                            2.  Each round, you will ask one yes-or-no question that will bring you closer to guessing your opponent's character.<br />
-                            3.  You may guess your opponent's character after the first round is complete, however, this action will end the game.<br />
-                            4.  You may mark which characters you believe are not in the hand of the opponent by selecting the 'eliminate' button and selecting the individual characters on your board, or you may right click on the characters to do so.<br />
+                            1. You will be randomly assigned a character out of the available 25.<br />
+                            2. Each round, you will ask one yes-or-no question that will bring you closer to guessing your opponent's character.<br />
+                            3. You may guess your opponent's character after the first round is complete, however, this action will end the game.<br />
+                            4. You may mark which characters you believe are not in the hand of the opponent by selecting the 'eliminate' button and selecting the individual characters on your board, or you may right click on the characters to do so.<br />
                         </p>
                     </div>
                 </div>
