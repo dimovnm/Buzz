@@ -1,13 +1,14 @@
 import React, { useState} from "react";
 // import { useNavigate } from "react-router-dom";
 // import {socket} from "../lib/socket";
-//import "./css/CreatePage.css";
+
 import Chat from "../components/Chat";
 
 function generateLobbyCode() {
   return Math.floor(1000 + Math.random() * 9000).toString();
 }
 
+import plus from "../assets/plus.png";
 import rect11 from "../assets/Rectangle 11.png";
 import rect12 from "../assets/Rectangle 12.png";
 import rect13 from "../assets/Rectangle 13.png";
@@ -60,9 +61,11 @@ function CategoryTile({ c }) {
             <img src={c.img} alt={c.label} className="w-full h-full object-cover" />
           ) : (
             <div className="w-full h-full flex items-center justify-center">
-              <span className="font-luckiest text-[clamp(36px,4vw,56px)] text-black leading-none">
-                +
-              </span>
+              <img
+                src={plus}
+                alt="Custom"
+                className="w-[clamp(60px,6vw,90px)] h-[clamp(60px,6vw,90px)] object-contain"/>
+
             </div>
           )}
         </div>
