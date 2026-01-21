@@ -4,6 +4,7 @@
 .landing-page {
   height: 100vh;
   background: #080834;
+  overflow: hidden;
 }
 
 .landing-content {
@@ -109,7 +110,7 @@
   cursor: pointer;
 
   position: absolute;
-  top: 40px;
+  top: 32px;
   left: 25px;
 
   /*background: rgba(58, 58, 126, 0.2);

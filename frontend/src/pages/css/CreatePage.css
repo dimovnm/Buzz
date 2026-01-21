@@ -1,0 +1,32 @@
+/*.create-page {
+  height: 100vh;
+  background: #080834;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.create-top-bar {
+  padding: 16px 24px;
+}
+
+.lobby-code {
+  font-family: "Luckiest Guy", system-ui, sans-serif;
+  font-size: 28px;
+  color: #3a3a7e;
+}
+
+.create-body {
+  flex: 1;
+  display: flex;
+}
+
+.create-main {
+  flex: 1;
+  padding: 24px;
+}
+
+.create-chat {
+  width: 360px;
+  border-left: 2px solid #2b2b5e;
+} */
