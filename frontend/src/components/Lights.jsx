@@ -30,10 +30,10 @@ export default function Lights({
             <span
               key={i}
               className={`light-bulb ${cls}`}
-              style={{
-                animationDelay: `${(i % 8) * 0.5}s`,
-              }}
-            />
+              style={{ "--delay": `${(i % 8) * 0.5}s` }}
+            >
+              <span className="bulb-ball" />
+            </span>
           ))}
         </div>
       </div>
