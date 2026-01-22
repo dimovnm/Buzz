@@ -6,6 +6,7 @@ import "./css/LandingPage.css";
 
 export default function LandingPage(){
     const navigate = useNavigate();
+    const [joinOpen, setJoinOpen] = useState(false);
     const [rulesOpen, setRulesOpen] = useState(false);
 
     const handleCreate = () => {
@@ -19,12 +20,30 @@ export default function LandingPage(){
             <h1 className="landing-title">BUZZ</h1>
 
             <div className="landing-buttons">
-                <button className="landing-btn">Join!</button>
+                <button className="landing-btn" onClick={() => setJoinOpen(true)}>Join!</button>
                 <button className="landing-btn" onClick={handleCreate}>Create.</button>
                 <button className="landing-btn" onClick={() => setRulesOpen(true)}>Rules?</button>
             </div>
           </main>
           <FeedbackButton/>
+
+          {/*Join Popup*/}
+            {joinOpen && (
+            <div className="popup-overlay" onClick={() => setJoinOpen(false)}>
+                <div className="join-popup" onClick={(e) => e.stopPropagation()}>
+                    <button
+                    className="popup-close"
+                    onClick={() => setJoinOpen(false)}
+                    aria-label="Close join"
+                    />
+                    <h2>Join!</h2>
+                    <div className="popup-content">
+                        <input type="text" placeholder="Enter Lobby Code" className="popup-input" />
+                        <button className="popup-btn"> JOIN </button>
+                    </div>
+                </div>
+            </div>
+          )}
 
           {/*Rules Popup*/}
           {rulesOpen && (
