@@ -111,12 +111,9 @@
 }
 
 .light-bulb {
-  border-radius: 50%;
   width: var(--bulb-size, 28px);
   height: var(--bulb-size, 28px);
   position: relative;
-  animation-duration: 2.5s;
-  animation-iteration-count: infinite;
   flex: 0 0 var(--bulb-size, 28px);
 }
 
@@ -125,12 +122,32 @@
   position: absolute;
   border: 2px solid #222;
   width: calc(var(--bulb-size, 28px) * 0.35);
-  height: calc(var(--bulb-size, 28px) * 0.35);
+  height: calc(var(--bulb-size, 28px) * 0.45);
   background: #222;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  left: 25%;
-  top: calc(-0.4 * var(--bulb-size, 28px));
+  left: 32%;
+  top: calc(-0.5 * var(--bulb-size, 28px));
+  z-index: 3;
+}
+
+.bulb-ball {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+
+  width: var(--bulb-size, 28px);
+  height: var(--bulb-size, 28px);
+  border-radius: 50%;
+
+  transform: translateY(-2px);
+
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+
+  animation-delay: var(--delay, 0s);
+
 }
 
 .light-bulb::after {
@@ -149,14 +166,15 @@
   border: none;
 }
 
-.light-bulb.theme-color-one { background: var(--theme-color-one); animation-name: light-up-theme-color-one; }
-.light-bulb.theme-color-two { background: var(--theme-color-two); animation-name: light-up-theme-color-two; }
-.light-bulb.theme-color-three { background: var(--theme-color-three); animation-name: light-up-theme-color-three; }
-.light-bulb.theme-color-four { background: var(--theme-color-four); animation-name: light-up-theme-color-four; }
-.light-bulb.theme-color-five { background: var(--theme-color-five); animation-name: light-up-theme-color-five; }
-.light-bulb.theme-color-six { background: var(--theme-color-six); animation-name: light-up-theme-color-six; }
-.light-bulb.theme-color-seven { background: var(--theme-color-seven); animation-name: light-up-theme-color-seven; }
-.light-bulb.theme-color-eight { background: var(--theme-color-eight); animation-name: light-up-theme-color-eight; }
+.light-bulb.theme-color-one .bulb-ball { background: var(--theme-color-one); animation-name: light-up-theme-color-one; }
+.light-bulb.theme-color-two .bulb-ball { background: var(--theme-color-two); animation-name: light-up-theme-color-two; }
+.light-bulb.theme-color-three .bulb-ball { background: var(--theme-color-three); animation-name: light-up-theme-color-three; }
+.light-bulb.theme-color-four .bulb-ball { background: var(--theme-color-four); animation-name: light-up-theme-color-four; }
+.light-bulb.theme-color-five .bulb-ball { background: var(--theme-color-five); animation-name: light-up-theme-color-five; }
+.light-bulb.theme-color-six .bulb-ball { background: var(--theme-color-six); animation-name: light-up-theme-color-six; }
+.light-bulb.theme-color-seven .bulb-ball { background: var(--theme-color-seven); animation-name: light-up-theme-color-seven; }
+.light-bulb.theme-color-eight .bulb-ball { background: var(--theme-color-eight); animation-name: light-up-theme-color-eight; }
+
 
 @media (max-width: 420px) {
   .lights-wrap { padding: 10px 0 4px; }
