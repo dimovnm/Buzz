@@ -1,5 +1,5 @@
 import React, { useState} from "react";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 // import {socket} from "../lib/socket";
 
 import Chat from "../components/Chat";
@@ -30,11 +30,19 @@ const CATEGORIES = [
   { key: "fictional", label: "FICTIONAL", img: rect18 },
 ];
 
-function CategoryTile({ c }) {
+function CategoryTile({ c, lobbyId, navigate }) {
+  const handleClick = () => {
+    if (c.key === "custom") {
+      navigate(`/${lobbyId}/custom`);
+    } else {
+      navigate(`/${lobbyId}/${c.key}`);
+    }
+  };
+
   return (
     <button
       className="text-center min-w-0 w-full"
-      onClick={() => console.log("clicked", c.key)}
+      onClick={handleClick}
     >
       <div
         className="
@@ -79,6 +87,7 @@ function CategoryTile({ c }) {
 }
 
 export default function CreatePage() {
+  const navigate = useNavigate();
   const [lobbyId] = useState(() => {
     const saved = localStorage.getItem("lobbyId");
     if (saved) return saved;
@@ -116,7 +125,12 @@ export default function CreatePage() {
             min-w-0
           ">
             {CATEGORIES.map((c) => (
-              <CategoryTile key={c.key} c={c} />
+              <CategoryTile
+                key={c.key}
+                c={c}
+                lobbyId={lobbyId}
+                navigate={navigate}
+              />
             ))}
           </div>
         </div>

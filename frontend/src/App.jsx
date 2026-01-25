@@ -1,13 +1,16 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LandingPage from "./pages/LandingPage";
 import CreatePage from "./pages/CreatePage";
+import ThemeSelectedPage from "./pages/ThemeSelectedPage";
+
 
 export default function App() {
   return (
-    <Router>
       <Routes>
+        {/* Home Page */}
         <Route path="/" element={<LandingPage />} />
-        <Route path="/CreatePage" element={<CreatePage />} />
+        {/* LobbyCode */}
+        <Route path="/:code" element={<CreatePage />} />
         {/*<Route path="/CreatePage"
         element={
           <ProtectedRoute>
@@ -15,7 +18,12 @@ export default function App() {
           </ProtectedRoute>
         }
       />*/}
+      <Route path="/:code/:themeId" element={<ThemeSelectedPage />} />
+
+      {/* Catch all 
+      <Route path="*" element={<Navigate to="/" replace />} />
+      */}
+      
       </Routes>
-    </Router>
   );
 }
