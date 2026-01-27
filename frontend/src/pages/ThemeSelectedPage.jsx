@@ -6,7 +6,6 @@ import { useNavigate, useParams } from "react-router-dom";
 import Chat from "../components/Chat";
 import { THEMES } from "../data/themes";
 import InfoTooltip from "../components/InfoTooltip";
-
 import arrowLeftLight from "../assets/arrow-left-light.png";
 
 const MAX_PICKS = 25;
@@ -44,6 +43,8 @@ export default function ThemeSelectedPage() {
   const [, setOppReady] = useState(false);
 
   const [randomAdded, setRandomAdded] = useState(() => new Set());
+
+  // const lobbyId = localStorage.getItem("lobbyId") ?? "----";
 
   const oppLabel = {
     [OppStatus.NOT_CONNECTED]: "Opponent has not connected...",
@@ -204,6 +205,7 @@ export default function ThemeSelectedPage() {
               <img src={arrowLeftLight} alt="Back" className="w-10 h-10 object-contain" />
             </button>
 
+
             {/* title */}
             <div className="flex flex-col items-center text-center">
               <div className="font-luckiest text-buzzpanel text-[clamp(40px,5vw,70px)] leading-none">
@@ -229,178 +231,194 @@ export default function ThemeSelectedPage() {
               </div>
             </div>
           </div>
+          
 
           {/* PANEL */}
           <div className="mt-[clamp(14px,2vw,22px)] flex-1 overflow-hidden min-w-0">
-            <div className="h-full rounded-[22px] bg-black/25 p-[clamp(14px,1.8vw,22px)] relative min-w-0">
-              <div className="absolute left-0 right-0 top-0 px-[clamp(14px,1.8vw,22px)] pt-3">
-                <div className="flex items-start justify-between">
-                  {/* YOU (left) */}
-                  <div className="text-left">
-                    <div className="font-luckiest text-buzzpanel text-[clamp(16px,1.6vw,22px)] leading-none">
-                      YOU
-                    </div>
-                    <div className="font-luckiest text-buzzpanel text-[clamp(22px,2.6vw,40px)] leading-none">
-                      {userPickCount}/{MAX_PICKS}
-                    </div>
+            <div
+              className="h-full rounded-[22px] p-[clamp(14px,1.8vw,22px)] min-w-0 flex flex-col"
+              style={{ backgroundColor: "#060627" }}
+            >
+              {/* header row */}
+              <div className="flex items-start justify-between pb-3">
+                <div className="text-left">
+                  <div className="font-luckiest text-buzzpanel text-[clamp(16px,1.6vw,22px)] leading-none">
+                    YOU
                   </div>
+                  <div className="font-luckiest text-buzzpanel text-[clamp(22px,2.6vw,40px)] leading-none">
+                    {userPickCount}/{MAX_PICKS}
+                  </div>
+                </div>
 
-                  {/* OPP (right) */}
-                  <div className="text-right">
-                    <div
-                      className="font-luckiest text-buzzpanel/50 text-[clamp(16px,1.6vw,22px)] leading-none"
-                    >
-                      OPP
-                    </div>
-                    <div
-                      className="font-luckiest text-buzzpanel/50 text-[clamp(22px,2.6vw,40px)] leading-none"
-                    >
-                      {oppPickCount}/{MAX_PICKS}
-                    </div>
+                <div className="text-right">
+                  <div
+                    className="font-luckiest text-buzzpanel/50 text-[clamp(16px,1.6vw,22px)] leading-none"
+                  >
+                    OPP
+                  </div>
+                  <div
+                    className="font-luckiest text-buzzpanel/50 text-[clamp(22px,2.6vw,40px)] leading-none"
+                  >
+                    {oppPickCount}/{MAX_PICKS}
                   </div>
                 </div>
               </div>
 
-              <div className="h-full overflow-y-auto pr-2 buzz-scroll pt-[74px] min-w-0">
-                <div
-                  className="
-                    grid justify-items-center min-w-0
-                    grid-cols-1
-                    sm:grid-cols-2
-                    lg:grid-cols-3
-                    xl:grid-cols-4
-                    2xl:grid-cols-5
-                    gap-x-[clamp(14px,1.6vw,20px)]
-                    gap-y-[clamp(12px,1.3vw,18px)]
-                  "
-                >
-                  {gridCharacters.map((c) => {
-                    const userHas = isSelected(c.id);
-                    const oppHas = isOppSelected(c.id);
+                {/* scroll area */}
+              <div className="flex-1 overflow-y-auto overflow-x-visible pr-2 buzz-scroll min-w-0">
+                {/* Give the grid a little breathing room so rings/badges don’t hit edges */}
+                <div className="pt-3 pb-2 px-1 overflow-visible">
+                  <div
+                    className="
+                      grid justify-items-center min-w-0 overflow-visible
+                      grid-cols-1
+                      sm:grid-cols-2
+                      md:grid-cols-3
+                      lg:grid-cols-4
+                      xl:grid-cols-5
+                      2xl:grid-cols-6
+                      gap-x-[clamp(14px,1.6vw,20px)]
+                      gap-y-[clamp(12px,1.3vw,18px)]
+                    "
+                  >
+                    {gridCharacters.map((c) => {
+                      const userHas = isSelected(c.id);
+                      const oppHas = isOppSelected(c.id);
 
-                    const vetoOverlay =
-                      phase === Phase.VETO &&
-                      (isVetoedByUser(c.id) || isVetoedByOpp(c.id));
+                      const vetoOverlay =
+                        phase === Phase.VETO &&
+                        (isVetoedByUser(c.id) || isVetoedByOpp(c.id));
 
-                    const ringClass =
-                      userHas && oppHas
-                        ? "ring-4 ring-white"
-                        : userHas
-                        ? "ring-4 ring-buzzpanel/60"
-                        : oppHas
-                        ? "ring-4 ring-[#4087C5]"
+                      const selectedClass = userHas
+                        ? "ring-4 ring-[#f0c517] shadow-[0_0_18px_rgba(240,197,23,0.55)] scale-[1.03]"
                         : "";
 
-                    return (
-                      <button
-                        key={c.id}
-                        onClick={() =>
-                          phase === Phase.SELECT ? toggleSelect(c.id) : toggleVeto(c.id)
-                        }
-                        disabled={userReady}
-                        className={[
-                          "text-center min-w-0 w-full max-w-[170px] rounded-[15px] bg-buzzpanel shadow-buzz transition relative",
-                          "hover:bg-buzzpanel/90",
-                          ringClass,
-                          userReady ? "opacity-70 cursor-not-allowed" : "",
-                        ].join(" ")}
-                      >
-                        <div className="p-[10px]">
-                          <img
-                            src={c.image}
-                            alt={c.name}
-                            className={[
-                              "mx-auto w-[137px] h-[116px] rounded-[12px] object-cover",
-                              vetoOverlay ? "grayscale opacity-40" : "",
-                            ].join(" ")}
-                          />
+                      const oppClass =
+                        !userHas && oppHas ? "ring-4 ring-[#4087C5] shadow-[0_0_16px_rgba(64,135,197,0.45)]" : "";
 
-                          <div className="mt-1 font-luckiest text-[clamp(16px,1.8vw,22px)] text-buzzbg leading-none truncate">
-                            {c.name}
-                          </div>
-                        </div>
+                      const bothClass =
+                        userHas && oppHas ? "ring-4 ring-white shadow-[0_0_18px_rgba(255,255,255,0.45)]" : "";
 
-                        {phase === Phase.VETO && isVetoedByUser(c.id) && (
-                          <div className="absolute inset-0 flex items-center justify-center text-5xl font-black text-white/90">
-                            ✖
+                      const ringClass = bothClass || selectedClass || oppClass;
+
+                      return (
+                        <button
+                          key={c.id}
+                          onClick={() =>
+                            phase === Phase.SELECT ? toggleSelect(c.id) : toggleVeto(c.id)
+                          }
+                          disabled={userReady}
+                          className={[
+                            "text-center min-w-0 w-full max-w-[170px] rounded-[15px] bg-buzzpanel shadow-buzz transition relative overflow-visible",
+                            "hover:bg-buzzpanel/90 active:scale-[0.98]",
+                            ringClass,
+                            userReady ? "opacity-70 cursor-not-allowed" : "",
+                          ].join(" ")}
+                        >
+                          <div className="p-[10px] flex flex-col items-center overflow-visible">
+                            <img
+                              src={c.image}
+                              alt={c.name}
+                              className={[
+                                "w-[137px] h-[116px] rounded-[12px] object-cover",
+                                vetoOverlay ? "grayscale opacity-40" : "",
+                              ].join(" ")}
+                            />
+
+                            <div className="mt-1 font-luckiest text-[clamp(16px,1.8vw,22px)] text-buzzbg leading-none truncate w-full">
+                              {c.name}
+                            </div>
                           </div>
-                        )}
-                        {phase === Phase.VETO &&
-                          !isVetoedByUser(c.id) &&
-                          isVetoedByOpp(c.id) && (
+
+                          {/* Check badge - ensure it can escape card bounds */}
+                          {phase === Phase.SELECT && userHas && (
+                            <div className="absolute -top-2 -right-2 w-7 h-7 rounded-full bg-[#f0c517] text-black flex items-center justify-center font-black shadow-md">
+                              ✓
+                            </div>
+                          )}
+
+                          {/* Veto overlays */}
+                          {phase === Phase.VETO && isVetoedByUser(c.id) && (
+                            <div className="absolute inset-0 flex items-center justify-center text-5xl font-black text-white/90">
+                              ✖
+                            </div>
+                          )}
+                          {phase === Phase.VETO && !isVetoedByUser(c.id) && isVetoedByOpp(c.id) && (
                             <div className="absolute inset-0 flex items-center justify-center text-5xl font-black text-white/50">
                               ✖
                             </div>
                           )}
-                      </button>
-                    );
-                  })}
+                        </button>
+                      );
+                    })}
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* BOTTOM BAR */}
-          <div className="mt-[clamp(14px,2vw,22px)] pb-[clamp(10px,2vw,18px)] flex items-center justify-between min-w-0">
-            <div className="flex items-center gap-4 min-w-0">
-              <button
-                onClick={handleRandom}
-                disabled={phase !== Phase.SELECT || userReady}
-                className={[
-                  "font-luckiest px-6 py-3 rounded-[14px] text-[clamp(18px,2.2vw,30px)] leading-none whitespace-nowrap",
-                  "bg-buzzpanel/25 border-2 border-buzzpanel/35 hover:bg-buzzpanel/30 transition",
-                  phase !== Phase.SELECT || userReady ? "opacity-50 cursor-not-allowed" : "",
-                ].join(" ")}
-              >
-                RANDOM
-              </button>
-
-              <button
-                disabled={!canUseVeto}
-                className={[
-                  "font-luckiest px-6 py-3 rounded-[14px] text-[clamp(18px,2.2vw,30px)] leading-none whitespace-nowrap",
-                  "bg-buzzpanel/25 border-2 border-buzzpanel/35 transition",
-                  canUseVeto ? "hover:bg-buzzpanel/30" : "opacity-40 cursor-not-allowed",
-                ].join(" ")}
-              >
-                VETO
-              </button>
-
-              <div className="min-w-0">
-                {needs25Combined ? (
-                  <div className="font-luckiest text-buzzpanel/70 text-[clamp(14px,1.6vw,22px)] leading-none">
-                    At least 25 characters must be selected between the two of you
-                  </div>
-                ) : showTimer ? (
-                  <div className="font-luckiest text-buzzpanel/70 text-[clamp(18px,2.2vw,30px)] leading-none whitespace-nowrap">
-                    1:{String(countdown).padStart(2, "0")}
-                  </div>
-                ) : null}
+          {/* bottom bar */}
+          <div className="mt-[clamp(14px,2vw,22px)] pb-[clamp(10px,2vw,18px)] min-w-0">
+            {(needs25Combined || showTimer) && (
+              <div className="mb-3 font-luckiest text-buzzpanel/70 text-[clamp(14px,1.6vw,22px)] leading-none">
+                {needs25Combined
+                  ? "At least 25 characters must be selected between the two of you"
+                  : `1:${String(countdown).padStart(2, "0")}`}
               </div>
-            </div>
+            )}
 
-            <button
-              onClick={handleReady}
-              disabled={
-                userReady ||
-                (phase === Phase.SELECT && userSelected.size === 0) ||
-                needs25Combined
-              }
-              className={[
-                "font-luckiest px-8 py-3 rounded-[14px] text-[clamp(18px,2.2vw,34px)] leading-none whitespace-nowrap",
-                "bg-buzzpanel/35 border-2 border-buzzpanel/45 hover:bg-buzzpanel/45 transition",
-                userReady ||
-                (phase === Phase.SELECT && userSelected.size === 0) ||
-                needs25Combined
-                  ? "opacity-50 cursor-not-allowed"
-                  : "",
-              ].join(" ")}
-            >
-              READY
-            </button>
+            <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+              <div className="flex flex-col gap-3 sm:flex-row sm:gap-4 sm:items-center">
+                <button
+                  onClick={handleRandom}
+                  disabled={phase !== Phase.SELECT || userReady}
+                  className={[
+                    "font-luckiest rounded-[14px] leading-none",
+                    "bg-buzzpanel/25 border-2 border-buzzpanel/35 hover:bg-buzzpanel/30 transition",
+                    "px-4 py-3 text-[clamp(16px,2vw,30px)]",
+                    "w-full sm:w-auto",
+                    (phase !== Phase.SELECT || userReady) ? "opacity-50 cursor-not-allowed" : "",
+                  ].join(" ")}
+                >
+                  RANDOM
+                </button>
+
+                <button
+                  disabled={!canUseVeto}
+                  className={[
+                    "font-luckiest rounded-[14px] leading-none",
+                    "bg-buzzpanel/25 border-2 border-buzzpanel/35 transition",
+                    "px-4 py-3 text-[clamp(16px,2vw,30px)]",
+                    "w-full sm:w-auto",
+                    canUseVeto ? "hover:bg-buzzpanel/30" : "opacity-40 cursor-not-allowed",
+                  ].join(" ")}
+                >
+                  VETO
+                </button>
+              </div>
+
+              <button
+                onClick={handleReady}
+                disabled={
+                  userReady ||
+                  (phase === Phase.SELECT && userSelected.size === 0) ||
+                  needs25Combined
+                }
+                className={[
+                  "font-luckiest rounded-[14px] leading-none whitespace-nowrap",
+                  "bg-buzzpanel/35 border-2 border-buzzpanel/45 hover:bg-buzzpanel/45 transition",
+                  "px-4 py-3 text-[clamp(18px,2.2vw,34px)]",
+                  "w-full sm:w-auto",
+                  (userReady || (phase === Phase.SELECT && userSelected.size === 0) || needs25Combined)
+                    ? "opacity-50 cursor-not-allowed"
+                    : "",
+                ].join(" ")}
+              >
+                READY
+              </button>
+            </div>
           </div>
 
-          {/* OPTIONAL DEV BUTTON for now (remove later) */}
           <div className="pb-2">
             <button
               onClick={devAdvanceToVeto}
