@@ -7,10 +7,10 @@
   Source: Wikimedia Commons  
   License: CC BY-SA 3.0
 
-- Saoirse Ronan
-  Photo by Martin Kraft
-  Source: Wikimedia Commons
-  License: CC BY-SA 4.0
+- Saoirse Ronan  
+  Photo by Martin Kraft  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 4.0  
 
 - Leonadro Di Caprio
   Photo by Colin Chou
