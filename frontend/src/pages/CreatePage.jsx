@@ -9,14 +9,14 @@ function generateLobbyCode() {
 }
 
 import plus from "../assets/plus.png";
-import rect11 from "../assets/Rectangle 11.png";
-import rect12 from "../assets/Rectangle 12.png";
-import rect13 from "../assets/Rectangle 13.png";
-import rect14 from "../assets/Rectangle 14.png";
-import rect15 from "../assets/Rectangle 15.png";
-import rect16 from "../assets/Rectangle 16.png";
-import rect17 from "../assets/Rectangle 17.png";
-import rect18 from "../assets/Rectangle 18.png";
+import rect11 from "../../public/themes/createpage/Rectangle 11.png";
+import rect12 from "../../public/themes/createpage/Rectangle 12.png";
+import rect13 from "../../public/themes/createpage/Rectangle 13.png";
+import rect14 from "../../public/themes/createpage/Rectangle 14.png";
+import rect15 from "../../public/themes/createpage/Rectangle 15.png";
+import rect16 from "../../public/themes/createpage/Rectangle 16.png";
+import rect17 from "../../public/themes/createpage/Rectangle 17.png";
+import rect18 from "../../public/themes/createpage/Rectangle 18.png";
 
 const CATEGORIES = [
   { key: "custom", label: "CUSTOM", img: null },

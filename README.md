@@ -1,8 +1,21 @@
-## Credits
+# Credits
 
-The decorative Christmas lights animation used is based on the following tutorial by Chinedu Daniel:
+This project uses third-party assets under their respective licenses
 
-> *“Let’s Build Christmas Lights with HTML, CSS, and JavaScript”*  
-> https://www.chinedudaniel.com/posts/2019/12/16/lets-build-christmas-lights-with-html-css-javascript
+- decorative Christmas lights animation adapted from:  
+  https://www.chinedudaniel.com/posts/2019/12/16/lets-build-christmas-lights-with-html-css-javascript
 
-This asset was adapted for use in a React + Vite project.
+## Icons
+
+- arrow-left.png, arrow-left-light.png  
+  “Arrow left icons” by LuthfiNr — Flaticon  
+  https://www.flaticon.com/free-icons/arrow-left
+
+- ratings.png  
+  "testimonial icons" by smashingstocks - Flaticon  
+  https://www.flaticon.com/free-icons/testimonial
+
+## Images
+
+- Character images used for dev/testing only. Not included on Github if not creditted
+  Full image attributions are listed in 'frontend/src/data/IMAGECREDITS.md'

@@ -1,5 +1,3 @@
-## photos in assets, themes/artists, themes/athletes, themes/youtubers are just used for dev testing and will be replaced
-
 ## Actors
 
 - Anne Hathaway  
