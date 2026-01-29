@@ -12,7 +12,7 @@
   Source: Wikimedia Commons  
   License: CC BY-SA 4.0  
 
-- Leonadro Di Caprio  
+- Leonadro DiCaprio  
   Photo by Colin Chou  
   Source: Wikimedia Commons  
   License: CC BY-SA 3.0  
@@ -177,11 +177,6 @@
   Source: Wikimedia Commons  
   License: CC BY-SA 3.0  
 
-- Tom Cruise  
-  Photo by Gage Skidmore  
-  Source: Wikimedia Commons  
-  License: CC BY-SA 3.0  
-
 - Pedro Pascal  
   Photo by Gabriel Hutchinson  
   Source: Wikimedia Commons  
@@ -197,7 +192,7 @@
   Source: Wikimedia Commons  
   License: CC BY-SA 2.0  
 
-- Willem Defoe  
+- Willem Dafoe  
   Photo by Eva Rinaldi  
   Source: Wikimedia Commons  
   License: CC BY-SA 2.0  
@@ -266,11 +261,6 @@
   Photo by Eva Rinaldi  
   Source: Wikimedia Commons  
   License: CC BY-SA 2.0  
-
-- Tom Holland  
-  Photo by Gage Skidmore  
-  Source: Wikimedia Commons  
-  License: CC BY-SA 3.0  
 
 - Jennifer Coolidge  
   Photo by Adam Chitayat  
