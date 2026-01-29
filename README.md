@@ -18,5 +18,5 @@ This project uses third-party assets under their respective licenses
 
 ## Images
 
-- Character images used for dev/testing only. Not included on Github if not creditted
+- Character images used for dev/testing only. Not included on Github if not credited  
   Full image attributions are listed in 'frontend/src/data/IMAGECREDITS.md'
