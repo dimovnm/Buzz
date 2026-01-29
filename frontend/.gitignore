@@ -32,3 +32,8 @@ dist/
 # env files
 .env
 .env.*.local
+
+# dev only local images
+public/themes/artists/
+public/themes/athletes/
+public/themes/youtubers/
