@@ -1,6 +1,7 @@
 # Credits
-
 This project uses third-party assets under their respective licenses
+
+## Components
 
 - decorative Christmas lights animation adapted from:  
   https://www.chinedudaniel.com/posts/2019/12/16/lets-build-christmas-lights-with-html-css-javascript
@@ -17,5 +18,5 @@ This project uses third-party assets under their respective licenses
 
 ## Images
 
-- Character images used for dev/testing only. Not included on Github if not creditted
+- Character images used for dev & testing only. Not included on Github if not credited.  
   Full image attributions are listed in 'frontend/src/data/IMAGECREDITS.md'
