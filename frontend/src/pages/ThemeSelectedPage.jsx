@@ -316,21 +316,24 @@ export default function ThemeSelectedPage() {
                           ].join(" ")}
                         >
                           <div className="p-[10px] flex flex-col items-center overflow-visible">
-                            <img
-                              src={c.image}
-                              alt={c.name}
-                              className={[
-                                "w-[137px] h-[116px] rounded-[12px] object-cover",
-                                vetoOverlay ? "grayscale opacity-40" : "",
-                              ].join(" ")}
-                            />
+                            {/* edit sizing and coloring */}
+                            <div className="w-[137px] h-[116px] rounded-[12px] border-[3px] border-[#3A3A7E]/75 overflow-hidden box-border">
+                              <img
+                                src={c.image}
+                                alt={c.name}
+                                className={[
+                                  "w-full h-full object-cover",
+                                  vetoOverlay ? "grayscale opacity-40" : "",
+                                ].join(" ")}
+                              />
+                            </div>
 
                             <div className="mt-1 font-luckiest text-[clamp(16px,1.8vw,22px)] text-buzzbg leading-none truncate w-full">
                               {c.name}
                             </div>
                           </div>
 
-                          {/* Check badge - ensure it can escape card bounds */}
+                          {/* Check badge */}
                           {phase === Phase.SELECT && userHas && (
                             <div className="absolute -top-2 -right-2 w-7 h-7 rounded-full bg-[#f0c517] text-black flex items-center justify-center font-black shadow-md">
                               ✓
