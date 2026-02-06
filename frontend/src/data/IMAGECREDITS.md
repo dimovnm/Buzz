@@ -553,3 +553,305 @@
   Photo by Dietmar Rabich  
   Source: Wikimedia Commons  
   License: CC BY-SA 4.0  
+
+## Artists
+
+- Ariana Grande  
+  Photo by David Shankbone  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 2.0  
+
+- Bad Bunny  
+  Photo by Toglenn  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 4.0  
+
+- Benson Boone  
+  Photo by Warner Records  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 4.0  
+
+- Beyonce  
+  Photo by Malik Shabazz  
+  Source: Wikimedia Commons  
+  License: Public Domain  
+
+- Billie Eilish  
+  Photo by Toglenn  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 4.0  
+
+- Bruno Mars  
+  Photo by Chriza T, Derivative Work by TheCuriousGnome  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 2.0  
+
+- Ceelo Green  
+  Photo by Gage Skidmore  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 3.0  
+
+- Chappell Roan  
+  Photo by Raph_PH  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 4.0  
+
+- Chris Martin  
+  Photo by Raph_PH  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 2.0  
+
+- Joe Keery  
+  Photo by Gage Skidmore  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 3.0  
+
+- Drake  
+  Photo from The Come Up Show  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 2.0  
+
+- Ed Sheeran  
+  Photo by Harald Krichel  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 3.0  
+
+- Fetty Wap  
+  Photo by Bs.Ballout  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 3.0  
+
+- Frank Ocean  
+  Photo by Andros Ladocsi  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 4.0  
+
+- Gracie Abrams  
+  Photo by Justin Higuchi  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 2.0  
+
+- Harry Styles  
+  Photo by Eva Rinaldi  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 2.0  
+
+- Hozier  
+  Photo by Bruce Baker  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 2.0  
+
+- Ice Spice  
+  Photo by Akein O. Brown  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 3.0  
+
+- Jason Aldean  
+  Photo by Gage Skidmore  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 4.0  
+
+- J. Cole  
+  Photo by Candice Rose, Deivative Work by C. Fred  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 3.0  
+
+- Jon Bon Jovi  
+  Photo by David Shankbone  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 3.0  
+
+- Justin Bieber  
+  Photo by Joe Bielawa  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 2.0  
+
+- Justin Timberlake  
+  Photo by Georges Biard  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 3.0  
+
+- Kanye West  
+  Photo by David Shankbone  
+  Source: Wikimedia Commons  
+  License: Public Domain  
+
+- Katseye  
+  Photo by Warmtoned  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 4.0  
+
+- Kehlani  
+  Photo by Tore Sætre  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 4.0  
+
+- Kendrick Lamar  
+  Photo by Fuzhaedo  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 4.0  
+
+- Lady Gaga  
+  Photo from SMP Entertainment  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 3.0  
+
+- Laufey  
+  Photo from Foundations Management  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 3.0  
+
+- Lil Wayne  
+  Photo by Megan Elice Meadows  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 2.0  
+
+- Luke Combs  
+  Photo by clintonbrannen  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 4.0  
+
+- Mac Miller  
+  Photo by Nicolas Völcker  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 4.0  
+
+- Madison Beer  
+  Photo by Toglenn  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 4.0  
+
+- Michael Jackson  
+  Photo by David Valdez  
+  Source: Wikimedia Commons  
+  License: Public Domain  
+
+- Miranda Lambert  
+  Photo by Miranda Lambert  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 4.0  
+  
+- Morgan Wallen  
+  Photo from the CwE  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 3.0  
+
+- Muni Long  
+  Photo by Danielle G. Campbell  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 4.0  
+
+- NewJeans  
+  Photo by LG전자  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 2.0  
+
+- Noah Kahan  
+  Photo from POPDUST  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 3.0  
+
+- Olivia Rodrigo  
+  Photo from the White House  
+  Source: Wikimedia Commons  
+  License: Public Domain  
+
+- PinkPantheress  
+  Photo by Ben  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 2.0  
+
+- Post Malone  
+  Photo from Cosmopolitan UK  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 3.0  
+
+- Prince  
+  Photo by Nicolas Genin  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 2.0  
+
+- Ravyn Lenae  
+  Photo by Kevin Paul  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 4.0  
+
+- Raye  
+  Photo by Genesis7777777  
+  Source: Wikimedia Commons  
+  License: CC BY-SA Zero, Public Domain  
+
+- Rihanna  
+  Photo by Liam Mendes  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 2.0
+
+- Rosalia  
+  Photo by Pedro J Pacheco  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 4.0
+
+- Sabrina Carpenter  
+  Photo by Phillip Mansfield  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 3.0  
+
+- Shaboozey  
+  Photo from BOSS TALK 101  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 3.0
+
+- Sombr  
+  Photo by Drew de F Fawkes  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 2.0  
+
+- Sophie  
+  Photo by Questskyzeidler  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 4.0  
+
+- SZA  
+  Photo by Raph_PH  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 2.0  
+
+- Tame Impala  
+  Photo by angela n.  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 2.0  
+
+- Tate McRae  
+  Photo by iHeartRadioCA  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 3.0  
+
+- Taylor Swift  
+  Photo by iHeartRadioCA  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 3.0  
+
+- TheWeeknd  
+  Photo by Canal22  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 3.0  
+
+- Tyler, The Creator  
+  Photo by Raph_PH  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 2.0  
+
+- Whitney Houston  
+  Photo by PH2 Mark Kettenhofen  
+  Source: Wikimedia Commons  
+  License: Public Domain  
+
+- Zara Larsson  
+  Photo by Justin Higuchi  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 2.0  
+
+- Zayn  
+  Photo from First Access Entertainment  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 3.0  
