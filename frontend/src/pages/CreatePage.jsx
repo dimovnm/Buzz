@@ -9,25 +9,23 @@ function generateLobbyCode() {
 }
 
 import plus from "../assets/plus.png";
-import rect11 from "../../public/themes/createpage/Rectangle 11.png";
-import rect12 from "../../public/themes/createpage/Rectangle 12.png";
-import rect13 from "../../public/themes/createpage/Rectangle 13.png";
-import rect14 from "../../public/themes/createpage/Rectangle 14.png";
-import rect15 from "../../public/themes/createpage/Rectangle 15.png";
-import rect16 from "../../public/themes/createpage/Rectangle 16.png";
-import rect17 from "../../public/themes/createpage/Rectangle 17.png";
-import rect18 from "../../public/themes/createpage/Rectangle 18.png";
+import actors from "../../public/themes/createpage/Actors.jpg";
+import artists from "../../public/themes/createpage/Artists.jpg";
+import athletes from "../../public/themes/createpage/Athletes.jpg";
+import historical from "../../public/themes/createpage/Historical.jpg";
+import politicians from "../../public/themes/createpage/Politicians.jpg";
+import streamers from "../../public/themes/createpage/Streamers.jpg";
+import youtubers from "../../public/themes/createpage/Youtubers.png";
 
 const CATEGORIES = [
   { key: "custom", label: "CUSTOM", img: null },
-  { key: "actors", label: "ACTORS", img: rect12 },
-  { key: "artists", label: "ARTISTS", img: rect11 },
-  { key: "streamers", label: "STREAMERS", img: rect14 },
-  { key: "youtubers", label: "YOUTUBERS", img: rect13 },
-  { key: "historical", label: "HISTORICAL", img: rect15 },
-  { key: "politicians", label: "POLITICIANS", img: rect16 },
-  { key: "athletes", label: "ATHLETES", img: rect17 },
-  { key: "fictional", label: "FICTIONAL", img: rect18 },
+  { key: "actors", label: "ACTORS", img: actors },
+  { key: "artists", label: "ARTISTS", img: artists },
+  { key: "athletes", label: "ATHLETES", img: athletes },
+  { key: "historical", label: "HISTORICAL", img: historical },
+  { key: "politicians", label: "POLITICIANS", img: politicians },
+  { key: "streamers", label: "STREAMERS", img: streamers },
+  { key: "youtubers", label: "YOUTUBERS", img: youtubers },
 ];
 
 function CategoryTile({ c, lobbyId, navigate }) {

@@ -1,9 +1,46 @@
+## Create Page Image Icons
+
+- Anne Hathaway (Actors)  
+  Photo by Harald Krichel  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 3.0  
+
+- Taylor Swift (Artists)  
+  Photo by Eva Rinaldi  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 2.0  
+
+- Tom Brady (Athletes)  
+  Photo by Andrew Campbell  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 2.0  
+
+- Hasan Piker (Streamers)  
+  Photo by mo1567  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 2.0  
+
+- PewDiePie (Youtubers)  
+  Photo from Cold Ones Clips  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 3.0  
+
+- Napolean Bonaparte (Historical)  
+  Portrait by François Gérard  
+  Source: Wikimedia Commons  
+  License: Public Domain  
+
+- President Barack Obama (Politicians)  
+  Photo by Pete Souza  
+  Source: Wikimedia Commons  
+  License: Public Domain  
+
 ## Actors
 
 - Anne Hathaway  
   Photo by Harald Krichel  
   Source: Wikimedia Commons  
-  License: CC BY-SA 3.0
+  License: CC BY-SA 3.0  
 
 - Saoirse Ronan  
   Photo by Martin Kraft  
@@ -601,6 +638,102 @@
   Photo from First Access Entertainment  
   Source: Wikimedia Commons  
   License: CC BY-SA 3.0  
+
+## Athletes
+
+- Aaron Judge  
+  Photo from KA Sports Photos  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 2.0  
+
+- Aaron Rodgers  
+  Photo from All-Pro Reels  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 2.0  
+
+- Alex Morgan  
+  Photo by Hameltion 
+  Source: Wikimedia Commons  
+  License: CC BY-SA 4.0  
+
+- Alexandra Trusova  
+  Photo by Divmel ic 
+  Source: Wikimedia Commons  
+  License: CC BY-SA 4.0  
+
+- Amber Glenn  
+  Photo by Phantom Kabocha 
+  Source: Wikimedia Commons  
+  License: CC BY-SA 4.0  
+
+- Angel Reese  
+  Photo by John Mac 
+  Source: Wikimedia Commons  
+  License: CC BY-SA 2.0  
+
+- Azzi Fudd  
+  Photo by John Mac 
+  Source: Wikimedia Commons  
+  License: CC BY-SA 2.0  
+
+- Caitlin Clark  
+  Photo by John Mac 
+  Source: Wikimedia Commons  
+  License: CC BY-SA 2.0  
+
+- Caleb Williams  
+  Photo from All-Pro Reels  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 4.0  
+
+- Charles Leclerc  
+  Photo by Gilzetbase, Derivative work by DaanTW  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 4.0  
+
+- Chloe Kim  
+  Photo from President’s Council on Sports, Fitness & Nutrition  
+  Source: Wikimedia Commons  
+  License: Public Domain  
+
+- Conor McGregor  
+  Photo from Miami Beach Police Department  
+  Source: Wikimedia Commons  
+  License: Public Domain  
+
+- Derrick Rose  
+  Photo by Keith Allison  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 2.0  
+
+- Dylan Cease  
+  Photo by Jmar Gambol  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 2.0  
+
+- Evgenia Medvedeva  
+  Photo by David W. Carmichael  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 3.0  
+
+- Floyd Mayweather  
+  Photo from DEWALT POWER TOOLS FIGHT NIGHT CLUB 2010  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 2.0  
+
+- Grigor Dimitrov  
+  Photo by Hameltion  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 4.0  
+
+- Jayden Reed  
+  Photo by Erik Drost  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 2.0  
+
+## Historical Figures
+
+## Politicians
 
 ## Streamers
 
