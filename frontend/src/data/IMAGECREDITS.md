@@ -696,10 +696,20 @@
   Source: Wikimedia Commons  
   License: Public Domain  
 
+- Coco Gauff  
+  Photo by All-Pro Reels  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 2.0  
+
 - Conor McGregor  
   Photo from Miami Beach Police Department  
   Source: Wikimedia Commons  
   License: Public Domain  
+
+- Cristiano Ronaldo  
+  Photo by Mehrdad Esfahani/SNN  
+  Source: Wikimedia Commons  
+  License: CC Attribution  
 
 - Derrick Rose  
   Photo by Keith Allison  
@@ -721,15 +731,220 @@
   Source: Wikimedia Commons  
   License: CC BY-SA 2.0  
 
+- Giannis Antetokounmpo  
+  Photo by Erik Drost  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 2.0  
+
 - Grigor Dimitrov  
   Photo by Hameltion  
   Source: Wikimedia Commons  
   License: CC BY-SA 4.0  
 
+- Jack Nicklaus  
+  Photo by Shealeah Craighead  
+  Source: Wikimedia Commons  
+  License: Public Domain  
+
 - Jayden Reed  
   Photo by Erik Drost  
   Source: Wikimedia Commons  
   License: CC BY-SA 2.0  
+
+- John Cena  
+  Photo by Gage Skidmore  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 3.0  
+
+- Katie Ledecky  
+  Photo by Fernando Frazão/ABr  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 3.0 br  
+
+- Kevin Durant  
+  Photo by Cyrus Saatsaz  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 4.0  
+
+- Kobe Bryant  
+  Photo from Gamerscore Blog from USA  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 2.0  
+
+- Lando Norris  
+  Photo by Steffen Prößdorf, Crop by Cerebral726  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 4.0  
+
+- LeBron James  
+  Photo by Erik Drost  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 2.0  
+
+- Lewis Hamilton  
+  Photo by Morio  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 4.0  
+
+- Luis Robert Jr  
+  Photo by D. Benjamin Miller  
+  Source: Wikimedia Commons  
+  License: CC BY-SA Zero, Public Domain Dedication  
+
+- Luka Dončić  
+  Photo by Erik Drost  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 2.0  
+
+- Maria Sharapova  
+  Photo from United Nations Development Programme  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 2.0  
+
+- Max Verstappen  
+  Photo by Morio  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 4.0  
+
+- Kylian Mbappe  
+  Photo by Эдгар Брещанов  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 4.0  
+
+- Lionel Messi  
+  Photo by Hossein Zohrevand  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 4.0  
+
+- Michael Jordan  
+  Photo by D. Myles Cullen  
+  Source: Wikimedia Commons  
+  License: Public Domain  
+
+- Michael Phelps  
+  Photo by Agência Brasil Fotografias  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 2.0  
+
+- Mike Tyson  
+  Photo by Super Festivals  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 2.0  
+
+- Naomi Osaka  
+  Photo by si.robi  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 2.0  
+
+- Neymar  
+  Photo by Granada  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 4.0  
+
+- Nikola Jokić  
+  Photo by All-Pro Reels  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 2.0  
+
+- Novak Djokovič  
+  Photo by AndyMiah  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 4.0  
+
+- Paige Bueckers  
+  Photo by John Mac  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 2.0  
+
+- Patrick Mahomes  
+  Photo by Adam Schultz  
+  Source: Wikimedia Commons  
+  License: Public Domain  
+
+- Serena Williams  
+  Photo by Edwin Martinez  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 2.0  
+
+- Sha'Carri Richardson  
+  Photo by Erik van Leeuwen  
+  Source: Wikimedia Commons  
+  License: GNU Free Documentation License  
+
+- Shaquille O'Neal  
+  Photo by Craig  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 2.0  
+
+- Shohei Ohtani  
+  Photo by All-Pro Reels  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 2.0  
+
+- Sidney Crosby  
+  Photo by Michael Miller  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 4.0  
+
+- Simone Biles  
+  Photo by Ocoudis  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 4.0  
+
+- Stephen Curry  
+  Photo by Cyrus Saatsaz  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 4.0  
+
+- Suni Lee  
+  Photo by JazzyJoeyD  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 4.0  
+
+- Dansby Swanson  
+  Photo by All-Pro Reels  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 2.0  
+
+- Tiger Woods  
+  Photo from The White House  
+  Source: Wikimedia Commons  
+  License: Public Domain  
+
+- Tom Brady  
+  Photo by Congressman Charlie Crist  
+  Source: Wikimedia Commons  
+  License: Public Domain  
+
+- Tony Hawk  
+  Photo by Christopher Michel  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 4.0  
+
+- Travis Kelce  
+  Photo by Adam Schultz  
+  Source: Wikimedia Commons  
+  License: Public Domain  
+
+- Usain Bolt  
+  Photo by Augustas Didžgalvis  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 4.0  
+
+- Venus Williams  
+  Photo by Ken Maynard  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 2.0  
+
+- Yuna Kim  
+  Photo by David W. Carmichael  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 4.0  
+
+- Yuzuru Hanyu  
+  Photo by David W. Carmichael  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 3.0  
 
 ## Historical Figures
 
