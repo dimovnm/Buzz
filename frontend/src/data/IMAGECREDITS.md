@@ -948,6 +948,53 @@
 
 ## Historical Figures
 
+- Cleopatra  
+  Scan by NYPL  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 4.0  
+
+- John Atanasoff  
+  Photo from Eye Steel Film from Canada  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 2.0  
+
+- King Tut  
+  Photo by Mark Fischer  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 2.0  
+
+- Malala Yousafzai  
+  Photo by flowcomm  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 2.0  
+
+- Mother Teresa  
+  Photo by JohnMathewSmith  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 2.0  
+
+- Rosa Parks  
+  Photo by John Mathew Smith & www.celebrity-photos.com  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 2.0  
+
+- Rosalind Franklin  
+  Photo from CSHL, Derivative work by Lämpel  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 4.0  
+
+- Spartacus  
+  Photo by Gautier Poupeau  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 2.0  
+
+- Stephen Hawking  
+  Photo by John Cairns  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 4.0  
+
+- All other images in the Historical category are labeled as Public Domain on Wikimedia Commons.  
+
 ## Politicians
 
 ## Streamers
