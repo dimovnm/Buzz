@@ -1,4 +1,4 @@
-## Create Page Image Icons
+## Create Page
 
 - Anne Hathaway (Actors)  
   Photo by Harald Krichel  
@@ -1014,7 +1014,7 @@
   Source: Wikimedia Commons  
   License: CC BY-SA 3.0  
 
-- xQc 
+- xQc  
   Photo from Esfand  
   Source: Wikimedia Commons  
   License: CC BY-SA 3.0  
@@ -1065,7 +1065,7 @@
   License: CC BY-SA 3.0  
 
 - Tenz  
-  Photo by Billgatenguyen
+  Photo by Billgatenguyen  
   Source: Wikimedia Commons  
   License: CC BY-SA 4.0  
 
@@ -1075,123 +1075,122 @@
   License: CC BY-SA Zero, Public Domain  
 
 - Adapt  
-  Photo from FaZa Sub-A-Thon by 5StarOoter
+  Photo from FaZa Sub-A-Thon by 5StarOoter  
   Source: Wikimedia Commons  
   License: CC BY-SA Zero, Public Domain  
 
 - JasonTheWeen  
-  Photo from FaZa Sub-A-Thon by 5StarOoter
+  Photo from FaZa Sub-A-Thon by 5StarOoter  
   Source: Wikimedia Commons  
   License: CC BY-SA Zero, Public Domain  
 
 - Squeezie  
-  Photo by Zack Nani
+  Photo by Zack Nani  
   Source: Wikimedia Commons  
   License: CC BY-SA 3.0  
 
 - MayaHiga  
-  Photo by LeahBeahReah
+  Photo by LeahBeahReah  
   Source: Wikimedia Commons  
   License: CC BY-SA 4.0  
 
 - Emiru  
-  Photo by Esfand
+  Photo by Esfand  
   Source: Wikimedia Commons  
   License: CC BY-SA 3.0  
 
 - Clavicular  
-  Photo by Braden Peters
+  Photo by Braden Peters  
   Source: Wikimedia Commons  
   License: CC BY-SA Zero, Public Domain  
 
 - DrDisrespect  
-  Photo by PUBG n8bit
+  Photo by PUBG n8bit  
   Source: Wikimedia Commons  
   License: CC BY-SA 4.0  
 
 - N3on  
-  Photo by KonvyLive
+  Photo by KonvyLive  
   Source: Wikimedia Commons  
   License: CC BY-SA 3.0  
 
 - PlaqueBoyMax  
-  Photo from MILLION DOLLAZ WORTH OF GAME
+  Photo from MILLION DOLLAZ WORTH OF GAME  
   Source: Wikimedia Commons  
   License: CC BY-SA 3.0  
 
 - N3on  
-  Photo by KonvyLive
+  Photo by KonvyLive  
   Source: Wikimedia Commons  
   License: CC BY-SA 3.0  
 
 - Duke Dennis  
-  Photo by ImDavisss Live
+  Photo by ImDavisss Live  
   Source: Wikimedia Commons  
   License: CC BY-SA 3.0  
 
 - Fanum  
-  Photo from Agent 00 Gaming
+  Photo from Agent 00 Gaming  
   Source: Wikimedia Commons  
   License: CC BY-SA 3.0  
 
 - Agent00  
-  Photo from Esfand
+  Photo from Esfand  
   Source: Wikimedia Commons  
   License: CC BY-SA 4.0  
 
 - Rayasianboy  
-  Photo by ImDavisss Live
+  Photo by ImDavisss Live  
   Source: Wikimedia Commons  
   License: CC BY-SA 3.0  
 
 - OhnePixel  
-  Photo by OhnePixel
+  Photo by OhnePixel  
   Source: Wikimedia Commons  
   License: CC BY-SA 3.0  
 
-
 - DougDoug  
-  Photo by Douglas Wreden
+  Photo by Douglas Wreden  
   Source: Wikimedia Commons  
   License: CC BY-SA 4.0  
 
 - DojaCattington  
-  Photo by The Knockturnal
+  Photo by The Knockturnal  
   Source: Wikimedia Commons  
   License: CC BY-SA 3.0  
 
 - Ninja  
-  Photo from StateFarm
+  Photo from StateFarm  
   Source: Wikimedia Commons  
   License: CC BY-SA 2.0  
 
 - LilyPichu  
-  Photo from Harada's Bar
+  Photo from Harada's Bar  
   Source: Wikimedia Commons  
   License: CC BY-SA 3.0  
 
 - Sodapoppin  
-  Photo fromEsfand
+  Photo fromEsfand  
   Source: Wikimedia Commons  
   License: CC BY-SA 3.0  
 
 - Northernlion  
-  Illustration by DavidOfThe
+  Illustration by DavidOfThe  
   Source: Wikimedia Commons  
   License: CC BY-SA 4.0  
 
 - CDawgVA  
-  Photo from RinRin Doll English Channel
+  Photo from RinRin Doll English Channel  
   Source: Wikimedia Commons  
   License: CC BY-SA 3.0  
 
 - Ironmouse  
-  Illustration by WhiteNearYM
+  Illustration by WhiteNearYM  
   Source: Wikimedia Commons  
   License: CC BY-SA Zero, Public Domain  
 
 - Yvonne  
-  Photo by KristoferYee
+  Photo by KristoferYee  
   Source: Wikimedia Commons  
   License: CC BY-SA 3.0  
 
@@ -1297,17 +1296,17 @@
   Source: Wikimedia Commons  
   License: CC BY-SA 3.0  
 
-- David Dobrik 
+- David Dobrik  
   Photo from America's Most Musical Family  
   Source: Wikimedia Commons  
   License: CC BY-SA 3.0  
 
-- Drew Gooden
+- Drew Gooden  
   Photo by 2 Danny 2 Furious  
   Source: Wikimedia Commons  
   License: CC BY-SA 3.0  
 
-- Emma Chamberlain 
+- Emma Chamberlain  
   Photo by Patou Cornette  
   Source: Wikimedia Commons  
   License: CC BY-SA 2.0  
@@ -1337,22 +1336,22 @@
   Source: Wikimedia Commons  
   License: CC BY-SA 3.0  
 
-- Huda Kattan (HudaBeauty)
+- Huda Kattan (HudaBeauty)  
   Photo by Susan Alpin  
   Source: Wikimedia Commons  
   License: CC BY-SA 4.0  
 
-- IDubbbz 
+- IDubbbz  
   Photo by Hmm091  
   Source: Wikimedia Commons  
   License: CC BY-SA 4.0  
 
-- Jacksepticeye
+- Jacksepticeye  
   Photo by Gage Skidmore  
   Source: Wikimedia Commons  
   License: CC BY-SA 3.0  
 
-- Jaiden Animations
+- Jaiden Animations  
   Photo by Skiinnum  
   Source: Wikimedia Commons  
   License: CC BY-SA 3.0  
@@ -1487,7 +1486,7 @@
   Source: Wikimedia Commons  
   License: CC BY-SA Zero, Public Domain  
 
-- Quenlin Blackwell 
+- Quenlin Blackwell  
   Photo by CA DMV  
   Source: Wikimedia Commons  
   License: Public Domain  
@@ -1537,7 +1536,7 @@
   Source: Wikimedia Commons  
   License: CC BY-SA 3.0  
 
-- Tana Mongeau 
+- Tana Mongeau  
   Photo by Tanner Fox  
   Source: Wikimedia Commons  
   License: CC BY-SA 3.0  
