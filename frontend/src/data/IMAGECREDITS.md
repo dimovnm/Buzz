@@ -652,32 +652,32 @@
   License: CC BY-SA 2.0  
 
 - Alex Morgan  
-  Photo by Hameltion 
+  Photo by Hameltion  
   Source: Wikimedia Commons  
   License: CC BY-SA 4.0  
 
 - Alexandra Trusova  
-  Photo by Divmel ic 
+  Photo by Divmel ic  
   Source: Wikimedia Commons  
   License: CC BY-SA 4.0  
 
 - Amber Glenn  
-  Photo by Phantom Kabocha 
+  Photo by Phantom Kabocha  
   Source: Wikimedia Commons  
   License: CC BY-SA 4.0  
 
 - Angel Reese  
-  Photo by John Mac 
+  Photo by John Mac  
   Source: Wikimedia Commons  
   License: CC BY-SA 2.0  
 
 - Azzi Fudd  
-  Photo by John Mac 
+  Photo by John Mac  
   Source: Wikimedia Commons  
   License: CC BY-SA 2.0  
 
 - Caitlin Clark  
-  Photo by John Mac 
+  Photo by John Mac  
   Source: Wikimedia Commons  
   License: CC BY-SA 2.0  
 
@@ -996,6 +996,302 @@
 - All other images in the Historical category are labeled as Public Domain on Wikimedia Commons.  
 
 ## Politicians
+
+- Abraham Lincoln  
+  Photo by Alexander Gardner  
+  Source: Wikimedia Commons  
+  License: Public Domain  
+
+- Al Gore  
+  Source: Wikimedia Commons  
+  License: Public Domain  
+
+- Alexandria Ocasio-Cortez  
+  Photo by Franmarie Metzler; U.S. House Office of Photography  
+  Source: Wikimedia Commons  
+  License: Public Domain  
+
+- Amy Coney Barrett  
+  Photo by Rachel Malehorn  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 4.0  
+
+- Andrew Cuomo  
+  Photo by Delta News Hub  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 2.0  
+
+- Arnold Schwarzenegger  
+  Photo by Gage Skidmore  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 3.0  
+
+- Ayanna Pressley  
+  Photo by U.S. House of Representatives  
+  Source: Wikimedia Commons  
+  License: Public Domain  
+
+- Barack Obama  
+  Photo by Pete Souza  
+  Source: Wikimedia Commons  
+  License: Public Domain  
+
+- Bernie Sanders  
+  Photo by Palácio do Planalto from Brasilia, Brasil  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 2.0  
+
+- Bill Clinton  
+  Photo by Bob McNeely, The White House  
+  Source: Wikimedia Commons  
+  License: Public Domain  
+
+- Boris Johnson  
+  Photo by Ben Shread  
+  Source: Wikimedia Commons  
+  License: Open Government License 3  
+
+- Claudia Sheinbaum  
+  Photo by Eneas De Troya  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 2.0  
+
+- Donald Trump  
+  Photo by Shealeah Craighead  
+  Source: Wikimedia Commons  
+  License: Public Domain  
+
+- Emmanuel Macron  
+  Photo by Simon Dawson  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 2.0  
+
+- Fidel Castro  
+  Photo from Mondadori Publishers  
+  Source: Wikimedia Commons  
+  License: Public Domain  
+
+- Franklin D Roosevelt  
+  Photo by Leon Perskie  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 2.0  
+
+- Gavin Newsom  
+  Photo from Office of the Lieutenant Governor of California  
+  Source: Wikimedia Commons  
+  License: Public Domain  
+
+- George W. Bush  
+  Photo by Eric Draper  
+  Source: Wikimedia Commons  
+  License: Public Domain  
+
+- Hillary Clinton  
+  Photo from United States Department of State  
+  Source: Wikimedia Commons  
+  License: Public Domain  
+
+- Ho Chi Minh  
+  Photo from Agence de presse Meurisse  
+  Source: Wikimedia Commons  
+  License: Public Domain  
+
+- Ilhan Omar  
+  Photo by Kristie Boyd; U.S. House Office of Photoraphy  
+  Source: Wikimedia Commons  
+  License: Public Domain  
+
+- JB Pritzker  
+  Photo from United States Department of Defense  
+  Source: Wikimedia Commons  
+  License: Public Domain  
+
+- JD Vance  
+  Photo from United States Congress  
+  Source: Wikimedia Commons  
+  License: Public Domain  
+
+- John F Kennedy  
+  Photo from United States Navy  
+  Source: Wikimedia Commons  
+  License: Public Domain  
+
+- Jimmy Carter  
+  Photo from United States DoD  
+  Source: Wikimedia Commons  
+  License: Public Domain  
+
+- Joe Biden  
+  Photo by Adam Schultz  
+  Source: Wikimedia Commons  
+  License: Public Domain  
+
+- Joseph Stalin    
+  Source: Wikimedia Commons  
+  License: Public Domain  
+
+- Justin Trudeau  
+  Photo by Andrea Hanks  
+  Source: Wikimedia Commons  
+  License: Public Domain  
+
+- Kamala Harris  
+  Photo by Lawrence Jackson  
+  Source: Wikimedia Commons  
+  License: Public Domain  
+
+- Kashyap Patel  
+  Photo by Sgt. Keisha Brown, U.S. Army  
+  Source: Wikimedia Commons  
+  License: Public Domain  
+
+- Kim Jong-Un  
+  Photo by Alexei Nikolsky, The Presidential Press and Information Office  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 4.0  
+
+- Kristi Noem  
+  Photo from Office of the Governor, South Dakota  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 4.0  
+
+- Lori Lightfoot  
+  Photo from U.S. Dept. of Housing and Urban Development from USA  
+  Source: Wikimedia Commons  
+  License: Public Domain  
+
+- Mao Zedong    
+  Source: Wikimedia Commons  
+  License: Public Domain  
+
+- Marco Rubio  
+  Photo from US Department of State  
+  Source: Wikimedia Commons  
+  License: Public Domain  
+
+- Margaret Thatcher  
+  Photo by Rob Bogaerts  
+  Source: Wikimedia Commons  
+  License: CC BY-SA Zero, Public Domain Dedication  
+
+- Marjorie Taylor Greene  
+  Photo from House Creative Services  
+  Source: Wikimedia Commons  
+  License: Public Domain  
+
+- Nancy Pelosi  
+  Photo by John Harrington  
+  Source: Wikimedia Commons  
+  License: Public Domain  
+
+- Nelson Mandela  
+  Photo by Kingkongphoto & www.celebrity-photos.com from Laurel  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 2.0  
+
+- Nicholas Maduro  
+  Photo from Office of the President of Russia  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 4.0  
+
+- Pam Bondi  
+  Photo from US DoJ  
+  Source: Wikimedia Commons  
+  License: Public Domain  
+
+- Pete Buttigieg  
+  Photo from US DoT  
+  Source: Wikimedia Commons  
+  License: Public Domain  
+
+- Pete Hegseth  
+  Photo from US DoD  
+  Source: Wikimedia Commons  
+  License: Public Domain  
+
+- Pope Francis  
+  Photo from Presidenza della Repubblica, Derivative work by Samuele1607  
+  Source: Wikimedia Commons  
+  License: CC Attribution  
+
+- Pope Leo  
+  Source: Wikimedia Commons  
+  License: Public Domain  
+
+- Recep Tayyip Erdoğan  
+  Photo by Mikhail Palinchak  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 4.0  
+
+- Rashida Tlaib  
+  Photo from US Congress  
+  Source: Wikimedia Commons  
+  License: Public Domain  
+
+- Robert F Kennedy Jr  
+  Photo from US DoHHS  
+  Source: Wikimedia Commons  
+  License: Public Domain  
+
+- Ron DeSantis  
+  Photo from US Congress  
+  Source: Wikimedia Commons  
+  License: Public Domain  
+
+- Ronald Reagan  
+  Photo by Pete Souza  
+  Source: Wikimedia Commons  
+  License: Public Domain  
+
+- Ruth Bader Ginsberg  
+  Photo by Steve Petteway  
+  Source: Wikimedia Commons  
+  License: Public Domain  
+
+- Shinzo Abe  
+  Photo from Cabinet Public Affairs Office, Cabinet Secretariat  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 4.0  
+
+- Ted Cruz  
+  Photo by U.S. Senate Photographic Studio  
+  Source: Wikimedia Commons  
+  License: Public Domain  
+
+- Tim Walz  
+  Photo by U.S. Congress  
+  Source: Wikimedia Commons  
+  License: Public Domain  
+
+- Vladimir Lenin  
+  Photo by Pavel Zhukov  
+  Source: Wikimedia Commons  
+  License: Public Domain  
+
+- Vladimir Putin  
+  Photo by Russian Presidential Press and Information Office  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 4.0  
+
+- Volodymyr Zelenskyy  
+  Photo from President of Ukraine from Україна  
+  Source: Wikimedia Commons  
+  License: Public Domain  
+
+- Winston Churchill  
+  Photo by Central Office of Information  
+  Source: Wikimedia Commons  
+  License: Public Domain  
+
+- Xi Jinping  
+  Photo by Officia do Palácio do Planalto  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 2.0  
+
+- Zohran Mamdani  
+  Photo by Dmitryshein  
+  Source: Wikimedia Commons  
+  License: CC BY-SA 4.0  
 
 ## Streamers
 

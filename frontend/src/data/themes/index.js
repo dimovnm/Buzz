@@ -4,6 +4,7 @@ import artists from "./artists";
 import actors from "./actors";
 import streamers from "./streamers";
 import historical from "./historical";
+import politicans from "./politicians";
 
 export const THEMES = {
   [youtubers.id]: youtubers,
@@ -12,4 +13,5 @@ export const THEMES = {
   [actors.id]: actors,
   [streamers.id]: streamers,
   [historical.id]: historical,
+  [politicans.id]: politicans,
 };

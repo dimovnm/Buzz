@@ -47,7 +47,7 @@ const streamers = {
     { id: "valkyrae", name: "Valkyrae", image: "/themes/streamers/valkyrae.png" },
     { id: "willneff", name: "Will Neff", image: "/themes/streamers/willneff.png" },
     { id: "xqc", name: "xQc", image: "/themes/streamers/Xqc.jpg" },
-    { id: "yvonneotv", name: "Yvonne", image: "/themes/streamers/Yvonnieotv.jpg" }
+    { id: "yvonneotv", name: "Yvonne", image: "/themes/streamers/Yvonnieotv.jpg" },
   ],
 };
 
