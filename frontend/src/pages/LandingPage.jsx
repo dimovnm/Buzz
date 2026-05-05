@@ -28,7 +28,7 @@ export default function LandingPage(){
           <FeedbackButton/>
 
           {/*Join Popup*/}
-            {joinOpen && (
+            {/*joinOpen && (
             <div className="popup-overlay" onClick={() => setJoinOpen(false)}>
                 <div className="join-popup" onClick={(e) => e.stopPropagation()}>
                     <button
@@ -40,6 +40,31 @@ export default function LandingPage(){
                     <div className="popup-content">
                         <input type="text" placeholder="Enter Lobby Code" className="popup-input" />
                         <button className="popup-btn"> JOIN </button>
+                    </div>
+                </div>
+            </div>
+          )*/}
+
+          {joinOpen && (
+            <div className="popup-overlay" onClick={() => setJoinOpen(false)}>
+                <div className="join-popup" onClick={(e) => e.stopPropagation()}>
+                    <button
+                    className="popup-close"
+                    onClick={() => setJoinOpen(false)}
+                    aria-label="Close join"
+                    />
+                    <h2>Join!</h2>
+                    <p className="join-code-label">Enter Code</p>
+                    <div className="popup-content join-content">
+                        <form className="join-code-form">
+                            <input type="text" inputMode="numeric" maxLength={1} className="popup-input"/>
+                            <input type="text" inputMode="numeric" maxLength={1} className="popup-input"/>
+                            <input type="text" inputMode="numeric" maxLength={1} className="popup-input"/>
+                            <input type="text" inputMode="numeric" maxLength={1} className="popup-input"/>
+                            <input type="text" inputMode="numeric" maxLength={1} className="popup-input"/>
+                        </form>
+                        
+                        <button className="popup-btn" type ="button"> ENTER </button>
                     </div>
                 </div>
             </div>
