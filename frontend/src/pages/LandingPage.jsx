@@ -64,6 +64,7 @@ export default function LandingPage(){
 
     return (
         <div className="landing-page">
+          <div className="lights-buffer" aria-hidden="true" />
           <Lights count={12} fixed={true} height={90} />
           <main className="landing-content">
             <h1 className="landing-title">BUZZ</h1>
@@ -98,7 +99,7 @@ export default function LandingPage(){
                                     type="text"
                                     inputMode="numeric"
                                     maxLength={1}
-                                    className="popup-input"
+                                    className={`popup-input ${joinError ? "popup-input-error" : ""}`}
                                     value={digit}
                                     onChange={(e) => handleDigitChange(i, e)}
                                     onKeyDown={(e) => handleKeyDown(i, e)}

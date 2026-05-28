@@ -2,9 +2,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,700;1,400&display=swap");
 
 .landing-page {
-  height: 100vh;
+  min-height: 100vh;
   background: #080834;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color:rgba(58, 58, 125, 0.65) transparent;
 }
 
 .landing-content {
@@ -13,10 +16,50 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding-top: clamp(40px, 12vh, 140px);
+  padding-top: clamp(12px, 7vh, 70px);
   padding-bottom: 40px;
   gap: 28px;
   text-align: center;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+.landing-page::-webkit-scrollbar {
+  width: 20px;
+}
+
+html::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track,
+.landing-page::-webkit-scrollbar-track{
+  background: transparent;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb,
+.landing-page::-webkit-scrollbar-thumb {
+  background: rgb(58, 58, 126);
+  border-radius: 999px;
+  border: 5px solid transparent;
+  background-clip: content-box;
+}
+
+html::-webkit-scrollbar-thumb:hover,
+body::-webkit-scrollbar-thumb:hover,
+.landing-page::-webkit-scrollbar-thumb:hover {
+  background: rgba(58, 58, 126, 0.8);
+}
+
+.lights-buffer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 115px;
+  background: #080834;
+  z-index: 40;
+  pointer-events: none;
 }
 
 .landing-title {
@@ -164,10 +207,54 @@
   text-align: center;
 }
 
+.join-popup .popup-input-error {
+  border-color: #d93025;
+  box-shadow:
+    0 0 10px rgba(255, 77, 77, 0.65),
+    0 0 24px rgba(255, 77, 77, 0.45),
+    0 0 40px rgba(255, 77, 77, 0.2);
+
+  animation: errorPulse 1s ease infinite alternate;
+}
+
+@keyframes errorPulse {
+  from {
+    box-shadow:
+      0 0 8px rgba(255, 77, 77, 0.45),
+      0 0 18px rgba(255, 77, 77, 0.25);
+  }
+
+  to {
+    box-shadow:
+      0 0 14px rgba(255, 77, 77, 0.85),
+      0 0 32px rgba(255, 77, 77, 0.45);
+  }
+}
+
 .join-popup .popup-input:focus {
   /*make these light colors random?*/
   border-color: #f8f8ff;
-  box-shadow: 0 0 0 4px rgba(92, 201, 244, 0.35);
+  box-shadow: 
+  0 0 10px rgba(92, 201, 244, 0.65),
+  0 0 24px rgba(92, 201, 244, 0.45),
+  0 0 40px rgba(92, 201, 244, 0.2);
+
+  animation: pulse 1s ease infinite alternate;
+  /*0 1px 25px 5px rgba(92, 201, 244, 0.35);*/
+}
+
+@keyframes pulse {
+  from {
+    box-shadow:
+      0 0 8px rgba(92, 201, 244, 0.45),
+      0 0 18px rgba(92, 201, 244, 0.25);
+  }
+
+  to {
+    box-shadow:
+      0 0 14px rgba(92, 201, 244, 0.85),
+      0 0 32px rgba(92, 201, 244, 0.45);
+  }
 }
 
 .join-code-form {
