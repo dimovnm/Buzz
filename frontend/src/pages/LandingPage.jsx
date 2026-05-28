@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Lights from "../components/Lights";
 import FeedbackButton from "../components/FeedbackButton";
 import "./css/LandingPage.css";
@@ -8,9 +8,58 @@ export default function LandingPage(){
     const navigate = useNavigate();
     const [joinOpen, setJoinOpen] = useState(false);
     const [rulesOpen, setRulesOpen] = useState(false);
+    const [digits, setDigits] = useState(["", "", "", "", ""]);
+    const [joinError, setJoinError] = useState("");
+    const inputRefs = useRef([]);
 
     const handleCreate = () => {
         navigate("/CreatePage");
+    };
+
+    const handleJoinClose = () => {
+        setJoinOpen(false);
+        setDigits(["", "", "", "", ""]);
+        setJoinError("");
+    };
+
+    const handleDigitChange = (index, e) => {
+        const val = e.target.value.replace(/[^0-9]/g, "").slice(-1);
+        const newDigits = [...digits];
+        newDigits[index] = val;
+        setDigits(newDigits);
+        setJoinError("");
+        if (val && index < 4) {
+            inputRefs.current[index + 1].focus();
+        }
+    };
+
+    const handleKeyDown = (index, e) => {
+        if (e.key === "Backspace" && digits[index] === "" && index > 0) {
+            const newDigits = [...digits];
+            newDigits[index - 1] = "";
+            setDigits(newDigits);
+            inputRefs.current[index - 1].focus();
+        }
+    };
+
+    const handlePaste = (e) => {
+        e.preventDefault();
+        const pasted = e.clipboardData.getData("text").replace(/[^0-9]/g, "").slice(0, 5);
+        if (!pasted) return;
+        const newDigits = Array(5).fill("").map((_, i) => pasted[i] || "");
+        setDigits(newDigits);
+        inputRefs.current[Math.min(pasted.length, 4)].focus();
+    };
+
+    const handleJoin = () => {
+        const code = digits.join("");
+        if (code.length < 5) {
+            setJoinError("Please enter the full 5-digit code.");
+            return;
+        }
+        // TODO: validate code against backend — replace this navigate with an API call
+        // If the lobby doesn't exist, call setJoinError("Incorrect code. Please try again.");
+        navigate(`/${code}`);
     };
 
     return (
@@ -27,44 +76,40 @@ export default function LandingPage(){
           </main>
           <FeedbackButton/>
 
-          {/*Join Popup*/}
-            {/*joinOpen && (
-            <div className="popup-overlay" onClick={() => setJoinOpen(false)}>
-                <div className="join-popup" onClick={(e) => e.stopPropagation()}>
-                    <button
-                    className="popup-close"
-                    onClick={() => setJoinOpen(false)}
-                    aria-label="Close join"
-                    />
-                    <h2>Join!</h2>
-                    <div className="popup-content">
-                        <input type="text" placeholder="Enter Lobby Code" className="popup-input" />
-                        <button className="popup-btn"> JOIN </button>
-                    </div>
-                </div>
-            </div>
-          )*/}
-
           {joinOpen && (
-            <div className="popup-overlay" onClick={() => setJoinOpen(false)}>
+            <div className="popup-overlay" onClick={handleJoinClose}>
                 <div className="join-popup" onClick={(e) => e.stopPropagation()}>
                     <button
-                    className="popup-close"
-                    onClick={() => setJoinOpen(false)}
-                    aria-label="Close join"
+                        className="popup-close"
+                        onClick={handleJoinClose}
+                        aria-label="Close join"
                     />
                     <h2>Join!</h2>
                     <p className="join-code-label">Enter Code</p>
                     <div className="popup-content join-content">
-                        <form className="join-code-form">
-                            <input type="text" inputMode="numeric" maxLength={1} className="popup-input"/>
-                            <input type="text" inputMode="numeric" maxLength={1} className="popup-input"/>
-                            <input type="text" inputMode="numeric" maxLength={1} className="popup-input"/>
-                            <input type="text" inputMode="numeric" maxLength={1} className="popup-input"/>
-                            <input type="text" inputMode="numeric" maxLength={1} className="popup-input"/>
+                        <form
+                            className="join-code-form"
+                            onSubmit={(e) => { e.preventDefault(); handleJoin(); }}
+                        >
+                            {digits.map((digit, i) => (
+                                <input
+                                    key={i}
+                                    ref={(el) => (inputRefs.current[i] = el)}
+                                    type="text"
+                                    inputMode="numeric"
+                                    maxLength={1}
+                                    className="popup-input"
+                                    value={digit}
+                                    onChange={(e) => handleDigitChange(i, e)}
+                                    onKeyDown={(e) => handleKeyDown(i, e)}
+                                    onPaste={handlePaste}
+                                    autoFocus={i === 0}
+                                    aria-label={`Digit ${i + 1} of 5`}
+                                />
+                            ))}
                         </form>
-                        
-                        <button className="popup-btn" type ="button"> ENTER </button>
+                        {joinError && <p className="join-error">{joinError}</p>}
+                        <button className="popup-btn" type="button" onClick={handleJoin}>ENTER</button>
                     </div>
                 </div>
             </div>

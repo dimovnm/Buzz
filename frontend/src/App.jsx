@@ -17,12 +17,12 @@ export default function App() {
             <HowToPlay />
           </ProtectedRoute>
         }
-      />*/}
-      <Route path="/:code/:themeId" element={<ThemeSelectedPage />} />
+        />*/}
+        <Route path="/:code/:themeId" element={<ThemeSelectedPage />} />
 
-      {/* Catch all 
-      <Route path="*" element={<Navigate to="/" replace />} />
-      */}
+        {/* Catch all 
+        <Route path="*" element={<Navigate to="/" replace />} />
+        */}
       
       </Routes>
   );

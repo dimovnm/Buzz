@@ -67,7 +67,7 @@
 
 .join-popup {
   background-color: #3a3a7e;
-  padding: 32px;
+  padding: 32px 32px 36px;
   width: clamp(320px, 55vw, 480px);
 
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
@@ -77,13 +77,14 @@
 
   position: relative;
   z-index: 3100;
-  overflow: hidden;
+  overflow: visible;
   color: #111;
 }
 
 .join-popup h2 {
   margin-top: 0;
-  font-size: 30px;
+  font-size: 35px;
+  color: #111;
   text-align: center;
   font-family: "Luckiest Guy", system-ui, sans-serif;
 }
@@ -107,25 +108,8 @@
 }
 
 .join-popup .popup-input {
-  /*flex: 0 1 320px;
-  min-width: 0;
-  max-width: 100%;
-  padding: 14px 16px;
-  font-size: 18px;
-  border-radius: 12px;
-  border: 2px solid #343471;
-  background: #f8f8ff;
-  font-family: "Bitter", serif;
-  mx-auto
-          rounded-[15px]
-          bg-buzzpanel
-          shadow-buzz
-          flex items-center justify-center
-          p-[clamp(12px,1.6vw,18px)]
-          w-full max-w-[310px]*/
-
-  width: clamp(38px, 9vw, 50px);
-  height: clamp(42px, 9vw, 50px);
+  width: clamp(48px, 10vw, 60px);
+  height: clamp(52px, 10vw, 60px);
   padding: 0;
   box-sizing: border-box;
   border: 2px solid #343471;
@@ -135,12 +119,10 @@
   font-family: "Luckiest Guy", system-ui, sans-serif;
   align-items: center;
   justify-content: center;
-  width: full;
   min-width: 0;
-  max-width: 50px;
-  margin: 1 0.3rem;
+  max-width: 60px;
   padding: 0.3rem;
-  height: 50px;
+  height: 60px;
   outline: none;
   
 }
@@ -157,20 +139,29 @@
   display: block;
   font-family: "Luckiest Guy", system-ui, sans-serif;
   font-size: 28px;
-  background: #080834;
+  background: #151547;
   color: #f8f8ff;
-  border-radius: 13px;
+  border-radius: 15px;
+  border: 2px solid #22225A;
   padding: 8px 42px;
   cursor: pointer;
-  box-shadow: 0px 4px 4px rgba(0,0,0,0.35)
 }
 
 .popup-btn:hover {
-  filter: brightness(0.85);
+  filter: brightness(1.10);
 }
 
 .join-popup .popup-btn:active {
   transform: translateY(2px);
+}
+
+.join-error {
+  margin: 0;
+  font-family: "Bitter", serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #d93025;
+  text-align: center;
 }
 
 .join-popup .popup-input:focus {
@@ -180,9 +171,10 @@
 }
 
 .join-code-form {
-  margin-top: 5px;
+  margin-top: 20px;
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: clamp(6px, 2vw, 14px);
   width: 100%;
   flex-wrap: nowrap;
@@ -196,8 +188,10 @@
   }
 
   .join-code-form {
+    margin-top: 20px;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: clamp(6px, 2vw, 14px);
     width: 100%;
     flex-wrap: nowrap;
@@ -244,7 +238,7 @@
 
 .popup h2 {
   margin-top: 0;
-  font-size: 30px;
+  font-size: 35px;
   text-align: center;
   font-family: "Luckiest Guy", system-ui, sans-serif;
 }
@@ -278,7 +272,7 @@
 }
 
 .popup-close:hover {
-  filter: brightness(0.85);
+  filter: brightness(1.25);
 }
 
 .popup-content{
