@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import Lights from "../components/Lights";
 import FeedbackButton from "../components/FeedbackButton";
 import "./css/LandingPage.css";
@@ -11,6 +11,11 @@ export default function LandingPage(){
     const [digits, setDigits] = useState(["", "", "", "", ""]);
     const [joinError, setJoinError] = useState("");
     const inputRefs = useRef([]);
+
+    useEffect(() => {
+        document.body.style.overflow = (joinOpen || rulesOpen) ? "hidden" : "";
+        return () => { document.body.style.overflow = ""; };
+    }, [joinOpen, rulesOpen]);
 
     const handleCreate = () => {
         navigate("/CreatePage");
@@ -63,7 +68,7 @@ export default function LandingPage(){
     };
 
     return (
-        <div className="landing-page">
+        <div className={`landing-page ${rulesOpen || joinOpen ? "popup-open" : ""}`}>
           <div className="lights-buffer" aria-hidden="true" />
           <Lights count={12} fixed={true} height={90} />
           <main className="landing-content">
@@ -76,7 +81,8 @@ export default function LandingPage(){
             </div>
           </main>
           <FeedbackButton/>
-
+          
+          
           {joinOpen && (
             <div className="popup-overlay" onClick={handleJoinClose}>
                 <div className="join-popup" onClick={(e) => e.stopPropagation()}>
@@ -127,7 +133,7 @@ export default function LandingPage(){
                     />
                     
                     <h2>Rules?</h2>
-                        <div className="popup-content">
+                        <div className="popup-content rules-scroll">
                         <p>
                             <strong>Objective</strong><br />
                             Guess your opponent's selected character before they guess yours.

@@ -23,31 +23,27 @@
 }
 
 html::-webkit-scrollbar,
-body::-webkit-scrollbar,
-.landing-page::-webkit-scrollbar {
-  width: 20px;
+body::-webkit-scrollbar {
+  width: 12px;
 }
 
 html::-webkit-scrollbar-track,
-body::-webkit-scrollbar-track,
-.landing-page::-webkit-scrollbar-track{
+body::-webkit-scrollbar-track {
   background: transparent;
   margin-top: 15px;
   margin-bottom: 15px;
 }
 
 html::-webkit-scrollbar-thumb,
-body::-webkit-scrollbar-thumb,
-.landing-page::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb {
   background: rgb(58, 58, 126);
   border-radius: 999px;
-  border: 5px solid transparent;
+  border: 3px solid transparent;
   background-clip: content-box;
 }
 
 html::-webkit-scrollbar-thumb:hover,
-body::-webkit-scrollbar-thumb:hover,
-.landing-page::-webkit-scrollbar-thumb:hover {
+body::-webkit-scrollbar-thumb:hover {
   background: rgba(58, 58, 126, 0.8);
 }
 
@@ -336,7 +332,11 @@ body::-webkit-scrollbar-thumb:hover,
   font-size: 17px;
   margin-bottom: 20px;
   line-height: 1.4;
-  text-align: justify;
+  text-align: center;
+}
+
+.landing-page.popup-open {
+  overflow: hidden;
 }
 
 .popup-close {
@@ -370,15 +370,31 @@ body::-webkit-scrollbar-thumb:hover,
   overflow-y: auto;
 }
 
-.popup-content::-webkit-scrollbar {
-  width: 8px;
+.rules-scroll {
+  max-height: calc(100% - 80px);
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(8, 8, 52, 0.65) transparent;
 }
 
-.popup-content::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.35);
-  border-radius: 4px;
+.rules-scroll::-webkit-scrollbar {
+  width: 10px;
 }
 
-.popup-content::-webkit-scrollbar-track {
+.rules-scroll::-webkit-scrollbar-thumb {
+  background: rgba(8, 8, 52, 0.65);
+  border-radius: 999px;
+  border: 3px solid transparent;
+  background-clip: content-box;
+}
+
+.rules-scroll::-webkit-scrollbar-track {
   background: transparent;
+}
+
+.rules-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(8, 8, 52, 0.92);
+  border-radius: 999px;
+  border: 3px solid transparent;
+  background-clip: content-box;
 }
