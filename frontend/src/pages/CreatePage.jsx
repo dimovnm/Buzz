@@ -85,7 +85,16 @@ function CategoryTile({ c, lobbyId, navigate }) {
   );
 }
 
+const OppStatus = {
+    NOT_CONNECTED: "not_connected",
+    CONNECTED_IDLE: "connected_idle",
+    SELECTING: "selecting",
+    READY: "ready",
+};
+
 export default function CreatePage() {
+  
+  const [oppStatus] = useState(OppStatus.NOT_CONNECTED);
   const navigate = useNavigate();
   const [lobbyId] = useState(() => {
     const saved = localStorage.getItem("lobbyId");
@@ -94,6 +103,13 @@ export default function CreatePage() {
     localStorage.setItem("lobbyId", code);
     return code;
   });
+
+  const oppLabel = {
+    [OppStatus.NOT_CONNECTED]: "Opponent has not connected...",
+    [OppStatus.CONNECTED_IDLE]: "Opponent has connected",
+    [OppStatus.SELECTING]: "Opponent is selecting...",
+    [OppStatus.READY]: "Opponent is ready",
+  }[oppStatus];
 
   return (
   <div className="h-screen bg-buzzbg text-white overflow-hidden">
@@ -134,6 +150,12 @@ export default function CreatePage() {
             >
               <span className="text-buzzbg">SELECT</span>
             </button>
+          </div>
+          <div className="mt-2 font-luckiest text-buzzpanel/80 text-[clamp(18px,2vw,28px)] leading-none text-center">
+            {oppLabel}
+          </div>
+          <div className="mt-2 font-bitter flex items-center justify-center gap-2 text-buzzpanel text-[clamp(14px,1.2vw,18px)]">
+            <span>Select a theme for your characters or create your own board!</span>
           </div>
         </div>
 
