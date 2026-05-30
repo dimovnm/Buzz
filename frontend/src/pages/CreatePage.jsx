@@ -1,13 +1,14 @@
-import React, { useState} from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 // import {socket} from "../lib/socket";
 
 import Chat from "../components/Chat";
 
 function generateLobbyCode() {
-  return Math.floor(1000 + Math.random() * 9000).toString();
+  return Math.floor(10000 + Math.random() * 90000).toString();
 }
 
+import arrowLeftLight from "../assets/arrow-left-light.png";
 import plus from "../assets/plus.png";
 import actors from "../../public/themes/createpage/Actors.jpg";
 import artists from "../../public/themes/createpage/Artists.jpg";
@@ -105,31 +106,65 @@ export default function CreatePage() {
     <div className="h-screen pr-[clamp(280px,26vw,330px)]">
       <div className="h-full px-[clamp(16px,4vw,80px)] pt-[clamp(16px,3vw,40px)] flex flex-col">
         {/* header */}
-        <div className="font-luckiest text-buzzpanel text-[clamp(44px,5vw,75px)] leading-none">
-          CODE: {lobbyId}
+        <div className="relative">
+          <button
+                        onClick={() => navigate(-1)}
+                        aria-label="Back"
+                        className="absolute left-0 top-1 hover:opacity-90 transition"
+                      >
+                        <img src={arrowLeftLight} alt="Back" className="w-10 h-10 object-contain" />
+          </button>
+          <div className="flex items-center justify-center gap-4 font-luckiest text-buzzpanel text-[clamp(40px,5vw,70px)] leading-none">
+            <span>THEME</span>
+
+            <button
+              type="button"
+              onClick={async () => {
+                await navigator.clipboard.writeText(lobbyId);
+
+                window.dispatchEvent(
+                  new CustomEvent("chat-system", {
+                    detail: "Code copied!",
+                  })
+                );
+              }}
+              className="inline-flex items-center justify-center rounded-[15px] bg-buzzpanel px-4 py-2 hover:bg-buzzpanel/90 transition"
+              title="Copy code"
+              aria-label={`Copy lobby code ${lobbyId}`}
+            >
+              <span className="text-buzzbg">SELECT</span>
+            </button>
+          </div>
         </div>
 
         {/* grid area */}
-        <div className="mt-[clamp(12px,2vw,24px)] flex-1 overflow-y-auto pb-10 pr-3 buzz-scroll">
-
-          <div className="
-            grid justify-items-center
-            grid-cols-1
-            sm:grid-cols-2
-            lg:grid-cols-3
-            2xl:grid-cols-4
-            gap-x-[clamp(16px,2.5vw,50px)]
-            gap-y-[clamp(18px,2.8vw,40px)]
-            min-w-0
-          ">
-            {CATEGORIES.map((c) => (
-              <CategoryTile
-                key={c.key}
-                c={c}
-                lobbyId={lobbyId}
-                navigate={navigate}
-              />
-            ))}
+            
+        <div className="mt-[clamp(12px,2vw,24px)] flex-1 min-w-0 overflow-hidden pb-8">
+          <div
+              className="h-full rounded-[22px] p-[clamp(14px,1.8vw,22px)] flex flex-col min-w-0"
+              style={{ backgroundColor: "#060627" }}
+            >
+            <div className="flex-1 overflow-y-auto overflow-x-hidden pr-3 buzz-scroll min-w-0">
+              <div className="
+                grid justify-items-center
+                grid-cols-1
+                sm:grid-cols-2
+                lg:grid-cols-3
+                2xl:grid-cols-4
+                gap-x-[clamp(16px,2.5vw,50px)]
+                gap-y-[clamp(18px,2.8vw,40px)]
+                min-w-0
+              ">
+                {CATEGORIES.map((c) => (
+                  <CategoryTile
+                    key={c.key}
+                    c={c}
+                    lobbyId={lobbyId}
+                    navigate={navigate}
+                  />
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </div>

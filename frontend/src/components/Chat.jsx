@@ -23,6 +23,30 @@ export default function Chat() {
     bottomRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [msgs]);
 
+  useEffect(() => {
+    const handleSystemMessage = (e) => {
+      setMsgs((prev) => [
+        ...prev,
+        {
+          type: "System",
+          username: "System",
+          text: e.detail,
+        },
+      ]);
+
+      window.addEventListener("chat-system", handleSystemMessage);
+
+      return () =>
+        window.removeEventListener("chat-system", handleSystemMessage);
+
+  };
+
+  window.addEventListener("chat-system", handleSystemMessage);
+
+  return () =>
+    window.removeEventListener("chat-system", handleSystemMessage);
+}, []);
+
   return (
     <div className="h-full flex flex-col text-white">
       <div className="flex-1 overflow-y-auto px-3 py-3 buzz-scroll">
