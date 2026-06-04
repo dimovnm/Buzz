@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 // import {socket} from "../lib/socket";
 
@@ -40,7 +40,7 @@ function CategoryTile({ c, lobbyId, navigate }) {
 
   return (
     <button
-      className="text-center min-w-0 w-full"
+      className="group text-center min-w-0 w-full"
       onClick={handleClick}
     >
       <div
@@ -52,16 +52,16 @@ function CategoryTile({ c, lobbyId, navigate }) {
           flex items-center justify-center
           p-[clamp(12px,1.6vw,18px)]
           w-full max-w-[310px]
+          group-hover:opacity-80
         ">
         <div
           className="
+            relative
             w-full
             max-w-[252px]
             aspect-[252/170]
             rounded-[12px]
             overflow-hidden
-            border-[3px]
-            border-buzzpanel/75
             bg-buzzpanel
           ">
           {c.img ? (
@@ -75,6 +75,7 @@ function CategoryTile({ c, lobbyId, navigate }) {
 
             </div>
           )}
+          <div className="absolute inset-0 rounded-[12px] border-[3px] border-[#3a3a7e]/70 pointer-events-none" />
         </div>
       </div>
 
@@ -104,12 +105,23 @@ export default function CreatePage() {
     return code;
   });
 
-  const oppLabel = {
-    [OppStatus.NOT_CONNECTED]: "Opponent has not connected...",
+  const oppLabelBase = {
+    [OppStatus.NOT_CONNECTED]: "Opponent has not connected",
     [OppStatus.CONNECTED_IDLE]: "Opponent has connected",
-    [OppStatus.SELECTING]: "Opponent is selecting...",
+    [OppStatus.SELECTING]: "Opponent is selecting",
     [OppStatus.READY]: "Opponent is ready",
   }[oppStatus];
+
+  const showDots = oppStatus === OppStatus.NOT_CONNECTED || oppStatus === OppStatus.SELECTING;
+
+  const [dots, setDots] = useState(".");
+  useEffect(() => {
+    if (!showDots) return;
+    const t = setInterval(() => {
+      setDots((prev) => (prev.length >= 3 ? "." : prev + "."));
+    }, 600);
+    return () => clearInterval(t);
+  }, [showDots]);
 
   return (
   <div className="h-screen bg-buzzbg text-white overflow-hidden">
@@ -130,29 +142,21 @@ export default function CreatePage() {
                       >
                         <img src={arrowLeftLight} alt="Back" className="w-10 h-10 object-contain" />
           </button>
+
           <div className="flex items-center justify-center gap-4 font-luckiest text-buzzpanel text-[clamp(40px,5vw,70px)] leading-none">
             <span>THEME</span>
-
-            <button
-              type="button"
-              onClick={async () => {
-                await navigator.clipboard.writeText(lobbyId);
-
-                window.dispatchEvent(
-                  new CustomEvent("chat-system", {
-                    detail: "Code copied!",
-                  })
-                );
-              }}
-              className="inline-flex items-center justify-center rounded-[15px] bg-buzzpanel px-4 py-2 hover:bg-buzzpanel/90 transition"
-              title="Copy code"
-              aria-label={`Copy lobby code ${lobbyId}`}
-            >
+            <span className="inline-flex items-center justify-center rounded-[15px] bg-buzzpanel px-4 py-2">
               <span className="text-buzzbg">SELECT</span>
-            </button>
+            </span>
           </div>
-          <div className="mt-2 font-luckiest text-buzzpanel/80 text-[clamp(18px,2vw,28px)] leading-none text-center">
-            {oppLabel}
+          <div className="mt-2 font-luckiest text-buzzpanel/75 text-[clamp(18px,2vw,28px)] leading-none text-center flex items-center justify-center gap-2">
+            {showDots && (
+              <span className="inline-block w-5 h-5 rounded-full border-[3px] border-buzzpanel/75 border-t-transparent animate-spin" />
+            )}
+            <span>
+              {oppLabelBase}
+              {showDots && <span className="inline-block min-w-[1.4em] text-left">{dots}</span>}
+            </span>
           </div>
           <div className="mt-2 font-bitter flex items-center justify-center gap-2 text-buzzpanel text-[clamp(14px,1.2vw,18px)]">
             <span>Select a theme for your characters or create your own board!</span>
@@ -161,7 +165,7 @@ export default function CreatePage() {
 
         {/* grid area */}
             
-        <div className="mt-[clamp(12px,2vw,24px)] flex-1 min-w-0 overflow-hidden pb-8">
+        <div className="mt-[clamp(12px,2vw,24px)] flex-1 min-w-0 overflow-hidden">
           <div
               className="h-full rounded-[22px] p-[clamp(14px,1.8vw,22px)] flex flex-col min-w-0"
               style={{ backgroundColor: "#060627" }}
@@ -189,6 +193,30 @@ export default function CreatePage() {
             </div>
           </div>
         </div>
+        <div className="mt-[clamp(14px,2vw,22px)] pb-[clamp(10px,2vw,18px)] min-w-0">
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+          <div className="flex flex-col gap-3 sm:flex-row sm:gap-4 sm:items-center">
+            <div className="flex font-luckiest text-buzzpanel text-[clamp(16px,5vw,35px)] leading-none">
+              <span>LOBBY CODE</span>
+            </div>
+            <button
+                  onClick={async () => {
+                    await navigator.clipboard.writeText(lobbyId);
+                    window.dispatchEvent(new CustomEvent("chat-system", { detail: "Code copied!" }));
+                  }}
+                  className=
+                    "font-luckiest rounded-[14px] leading-none bg-buzzpanel border-2 border-buzzpanel hover:bg-buzzpanel/80 transition px-4 py-3 text-[clamp(16px,2vw,30px)] text-buzzbg w-full sm:w-auto"
+                    title="Copy Lobby Code"
+                    aria-label={`Copy Lobby Code ${lobbyId}`}
+                >
+                  {lobbyId}
+            </button>
+          </div>
+        </div>
+      </div>
+      <div className="pb-2">
+        <span className="invisible text-xs pointer-events-none">DEV</span>
+      </div>
       </div>
     </div>
   </div>

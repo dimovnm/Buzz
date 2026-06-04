@@ -44,14 +44,25 @@ export default function ThemeSelectedPage() {
 
   const [randomAdded, setRandomAdded] = useState(() => new Set());
 
-  // const lobbyId = localStorage.getItem("lobbyId") ?? "----";
+  const lobbyId = localStorage.getItem("lobbyId") ?? "-----";
 
-  const oppLabel = {
-    [OppStatus.NOT_CONNECTED]: "Opponent has not connected...",
+  const oppLabelBase = {
+    [OppStatus.NOT_CONNECTED]: "Opponent has not connected",
     [OppStatus.CONNECTED_IDLE]: "Opponent has connected",
-    [OppStatus.SELECTING]: "Opponent is selecting...",
+    [OppStatus.SELECTING]: "Opponent is selecting",
     [OppStatus.READY]: "Opponent is ready",
   }[oppStatus];
+
+  const showDots = oppStatus === OppStatus.NOT_CONNECTED || oppStatus === OppStatus.SELECTING;
+
+  const [dots, setDots] = useState(".");
+  useEffect(() => {
+    if (!showDots) return;
+    const t = setInterval(() => {
+      setDots((prev) => (prev.length >= 3 ? "." : prev + "."));
+    }, 600);
+    return () => clearInterval(t);
+  }, [showDots]);
 
   const gridCharacters = useMemo(() => {
     if (!theme) return [];
@@ -205,22 +216,23 @@ export default function ThemeSelectedPage() {
               <img src={arrowLeftLight} alt="Back" className="w-10 h-10 object-contain" />
             </button>
 
-
             {/* title */}
             <div className="flex flex-col items-center text-center">
               <div className="font-luckiest text-buzzpanel text-[clamp(40px,5vw,70px)] leading-none">
                 THEME{" "}
-                <button
-                  type="button"
-                  className="ml-2 inline-flex items-center justify-center rounded-[15px] bg-buzzpanel px-4 py-2 hover:bg-buzzpanel/90 transition"
-                  title="Change theme"
-                >
+                <span className="inline-flex items-center justify-center rounded-[15px] bg-buzzpanel px-4 py-2">
                   <span className="text-buzzbg">{theme.title}</span>
-                </button>
+                </span>
               </div>
 
-              <div className="mt-2 font-luckiest text-buzzpanel/80 text-[clamp(18px,2vw,28px)] leading-none">
-                {oppLabel}
+              <div className="mt-2 font-luckiest text-buzzpanel/75 text-[clamp(18px,2vw,28px)] leading-none flex items-center justify-center gap-2">
+                {showDots && (
+                  <span className="inline-block w-5 h-5 rounded-full border-[3px] border-buzzpanel/80 border-t-transparent animate-spin" />
+                )}
+                <span>
+                  {oppLabelBase}
+                  {showDots && <span className="inline-block min-w-[1.4em] text-left">{dots}</span>}
+                </span>
               </div>
 
               <div className="mt-2 font-bitter flex items-center justify-center gap-2 text-buzzpanel text-[clamp(14px,1.2vw,18px)]">
@@ -266,7 +278,6 @@ export default function ThemeSelectedPage() {
 
                 {/* scroll area */}
               <div className="flex-1 overflow-y-auto overflow-x-visible pr-2 buzz-scroll min-w-0">
-                {/* Give the grid a little breathing room so rings/badges don’t hit edges */}
                 <div className="pt-3 pb-2 px-1 overflow-visible">
                   <div
                     className="
@@ -309,26 +320,26 @@ export default function ThemeSelectedPage() {
                           }
                           disabled={userReady}
                           className={[
-                            "text-center min-w-0 w-full max-w-[170px] rounded-[15px] bg-buzzpanel shadow-buzz transition relative overflow-visible",
-                            "hover:bg-buzzpanel/90 active:scale-[0.98]",
+                            "group text-center min-w-0 w-full max-w-[170px] rounded-[15px] bg-buzzpanel shadow-buzz transition relative overflow-visible",
+                            "hover:bg-buzzpanel/80 active:scale-[0.98]",
                             ringClass,
                             userReady ? "opacity-70 cursor-not-allowed" : "",
                           ].join(" ")}
                         >
-                          <div className="p-[10px] flex flex-col items-center overflow-visible">
+                          <div className="p-[10px] pb-[14px] flex flex-col items-center overflow-visible">
                             {/* edit sizing and coloring */}
-                            <div className="w-[137px] h-[116px] rounded-[12px] border-[3px] border-[#3A3A7E]/75 overflow-hidden box-border">
+                            <div className="relative w-full max-w-[137px] aspect-[137/116] rounded-[12px] overflow-hidden">
                               <img
                                 src={c.image}
                                 alt={c.name}
                                 className={[
-                                  "w-full h-full object-cover",
+                                  "w-full h-full object-cover transition-opacity group-hover:opacity-80",
                                   vetoOverlay ? "grayscale opacity-40" : "",
                                 ].join(" ")}
                               />
+                              <div className="absolute inset-0 rounded-[12px] border-[3px] border-[#3a3a7e]/70 pointer-events-none" />
                             </div>
-
-                            <div className="mt-1 font-luckiest text-[clamp(16px,1.8vw,22px)] text-buzzbg leading-none truncate w-full">
+                            <div className="mt-2 px-1 font-luckiest text-[clamp(13px,1.4vw,18px)] text-buzzbg leading-[1] text-center w-full min-h-[2.2em]">
                               {c.name}
                             </div>
                           </div>
@@ -372,6 +383,23 @@ export default function ThemeSelectedPage() {
 
             <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
               <div className="flex flex-col gap-3 sm:flex-row sm:gap-4 sm:items-center">
+                <div className="flex font-luckiest text-buzzpanel text-[clamp(16px,5vw,35px)] leading-none">
+                  <span>LOBBY CODE</span>
+                </div>
+
+                <button
+                  onClick={async () => {
+                    await navigator.clipboard.writeText(lobbyId);
+                    window.dispatchEvent(new CustomEvent("chat-system", { detail: "Code copied!" }));
+                  }}
+                  className=
+                    "font-luckiest rounded-[14px] leading-none bg-buzzpanel border-2 border-buzzpanel hover:bg-buzzpanel/80 transition px-4 py-3 text-[clamp(16px,2vw,30px)] text-buzzbg w-full sm:w-auto"
+                    title="Copy Lobby Code"
+                    aria-label={`Copy Lobby Code ${lobbyId}`}
+                >
+                  {lobbyId}
+                </button>
+
                 <button
                   onClick={handleRandom}
                   disabled={phase !== Phase.SELECT || userReady}
